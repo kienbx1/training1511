@@ -1,0 +1,85 @@
+.header-container {
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  font-weight: 500;
+  height: 111px;
+  position: fixed;
+  z-index: 99;
+  background-color: transparent;
+
+  .container {
+    height: 100%;
+  }
+
+  .row {
+    height: 100%;
+  }
+
+  .nav {
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .nav-list {
+    display: flex;
+
+    .nav-link {
+      text-transform: capitalize;
+      font-size: 15px;
+      color: #fff;
+    }
+    .nav-link:last-child {
+      margin-left: 10px;
+    }
+    .nav-link:hover {
+      color: #5cbbe5;
+    }
+
+    .contact {
+      border: 2px solid #fff;
+      border-radius: 24px;
+    }
+  }
+}
+
+.banner-container {
+  width: 100%;
+  height: 100vh;
+  background: url("/src/images/bg3@4x.png") top center / cover no-repeat;
+  position: relative;
+
+  .banner-text {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .title {
+    font-size: 42px;
+    text-transform: uppercase;
+    line-height: 52px;
+    font-weight: 700;
+    top: 142px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    top: 234px;
+  }
+
+  .image-group {
+    margin: 0 auto;
+    position: absolute;
+    top: 272px;
+  }
+
+  .banner-vector {
+    position: absolute;
+    top: 289px;
+    left: -266px;
+  }
+}
