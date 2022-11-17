@@ -1,0 +1,65 @@
+.banner-container {
+  width: 100%;
+  height: 100vh;
+  background: url("/src/images/bg3@4x.png") top center / cover no-repeat;
+  position: relative;
+
+  .banner-text {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .title {
+    font-size: 42px;
+    text-transform: uppercase;
+    line-height: 52px;
+    font-weight: 700;
+    top: 142px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    top: 234px;
+  }
+
+  .image-group {
+    margin: 0 auto;
+    position: absolute;
+    top: 272px;
+  }
+
+  .banner-vector {
+    position: absolute;
+    top: 289px;
+    left: -266px;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    top: 200px;
+    right: 27px;
+
+    .contact-link a {
+      display: block;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      background-color: #eea4c9;
+      border-radius: 50%;
+    }
+    .contact-link a:hover {
+      background-color: #5cbbe5;
+    }
+    .contact-link img {
+      margin-bottom: 4px;
+    }
+  }
+}
