@@ -20,12 +20,10 @@
   }
 
   .container-introduction {
-    margin-bottom: 162px;
     position: relative;
 
     .img-introduction {
       margin-left: 70px;
-      z-index: 99;
     }
 
     .text-introduction {
@@ -36,9 +34,7 @@
       color: #fff;
       font-size: 14px;
       font-weight: 500;
-      position: absolute;
-      top: 55%;
-      left: 45%;
+      transform: translate(540px, -260px);
     }
 
     .text-introduction p {
@@ -47,11 +43,15 @@
       }
     }
 
+    .dots-slider-introduction {
+      display: none;
+    }
+
     .vector-main-introduction img {
       &:first-child {
         position: absolute;
-        top: 119px;
-        left: -90px;
+        top: 125px;
+        left: 50px;
       }
 
       &:nth-child(2) {
@@ -62,9 +62,9 @@
 
       &:last-child {
         position: absolute;
-        left: -7px;
-        bottom: -94px;
-        z-index: -99;
+        left: 114px;
+        bottom: 224px;
+        z-index: -1;
       }
     }
   }
