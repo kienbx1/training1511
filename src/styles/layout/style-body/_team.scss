@@ -1,0 +1,63 @@
+.container-team {
+  padding: 100px 135px 80px;
+  position: relative;
+
+  .main-team {
+    margin-bottom: 570px;
+
+    .title-team {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 46px;
+      width: 500px;
+    }
+    span {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 46px;
+    }
+
+    .member {
+      .member-img {
+        position: absolute;
+        &:first-child {
+          right: 470px;
+          top: 100px;
+        }
+
+        &:nth-child(3) {
+          right: 765px;
+          top: 309px;
+        }
+
+        &:nth-child(4) {
+          right: 240px;
+          top: 160px;
+        }
+
+        &:nth-child(5) {
+          right: 771px;
+          top: 538px;
+        }
+
+        &:nth-child(6) {
+          right: 443px;
+          top: 491px;
+        }
+
+        &:nth-child(7) {
+          right: 180px;
+          top: 456px;
+        }
+      }
+
+      .info-member {
+        display: none;
+      }
+    }
+
+    .dots-slider-introduction {
+      display: none;
+    }
+  }
+}
