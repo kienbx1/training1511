@@ -1,0 +1,23 @@
+.body-container {
+  .body-title {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 6em;
+
+    #body-title {
+      font-family: "Quicksand";
+      font-style: normal;
+      color: black;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 46px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .body-title {
+    display: block;
+  }
+}
