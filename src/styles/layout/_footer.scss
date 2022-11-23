@@ -1,0 +1,126 @@
+.footer-container {
+  background-color: #1c0233;
+  padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    .footer-logo {
+      margin: 83px 0 70px;
+    }
+
+    .footer-title {
+      color: #fff;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 12px;
+    }
+
+    .footer-description {
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+
+    .input-subscribe {
+      margin-bottom: 35px;
+
+      input {
+        border: 1px solid #def0fa;
+        background-color: #1c0233;
+        padding: 12px 458px 12px 25px;
+        border-radius: 100px;
+        color: #fff;
+      }
+
+      .btn-subscribe {
+        border: none;
+        border-radius: 100px;
+        color: #00405c;
+        font-weight: 700;
+        padding: 13px 40px;
+        transform: translateX(-160px);
+        background: linear-gradient(to right, rgb(92, 187, 229), rgb(238, 164, 201));
+      }
+    }
+
+    .follow-us {
+      width: 50%;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 40px;
+
+      .follow-us-title {
+        color: #fff;
+      }
+
+      .list-icon-social {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+
+        .icon-social {
+          width: 46px;
+          height: 46px;
+          background-color: transparent;
+          border-radius: 50%;
+          line-height: 46px;
+          text-align: center;
+
+          .icon-social-img {
+            margin-bottom: 4px;
+          }
+        }
+        .icon-social:hover {
+          background-color: #1877f2;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .line-footer {
+      margin-bottom: 22px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .copy-right {
+      p {
+        color: #fff;
+        text-align: center;
+      }
+
+      span {
+        margin-left: 8px;
+      }
+    }
+
+    .img-footer {
+      position: absolute;
+      top: 34px;
+      right: 100px;
+    }
+
+    .list-vector-footer img {
+      &:first-child {
+        position: absolute;
+        top: 130px;
+        left: 570px;
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        top: 53px;
+        left: 674px;
+      }
+
+      &:last-child {
+        position: absolute;
+        top: 213px;
+        left: 660px;
+      }
+    }
+  }
+}
