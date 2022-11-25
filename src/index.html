@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- include head.html -->
-  <title>HTML Boilerplate</title>
+  <head>
+    <!-- include head.html -->
+    <title>HTML Boilerplate</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
@@ -19,48 +19,79 @@
 <meta property="og:type" content="">
 <meta property="og:url" content="" />
 <!-- Google Font -->
-  <!-- include styles.html -->
-  <!-- build:css(.tmp) style/style.min.css -->
+    <!-- include styles.html -->
+    <!-- build:css(.tmp) style/style.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
 <!-- endbuild -->
-</head>
-<body>
-  <div class="wrapper">
-    <!-- include header.html -->
-    <header class="header-container">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- include header.html -->
+      <header class="header-container">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Header Container</p>
-      </div>
+    <div class="header-logo">
+      <img src="../../images/logo.png" alt="logo" />
+    </div>
+    <div>
+      <ul class="header-list">
+        <li class="header-list__item">Trang chủ</li>
+        <li class="header-list__item">Giới thiệu</li>
+        <li class="header-list__item">Dịch vụ</li>
+        <li class="header-list__item">Cộng đồng</li>
+        <li class="header-list__item">Tin tức</li>
+        <li class="header-list__item">Khách hàng</li>
+        <li class="header-list__item contact">Liên hệ</li>
+      </ul>
+
+      <div class="header-menu"><img src="../../images/menu.png" alt="" /></div>
     </div>
   </div>
+
+  <div></div>
 </header>
 
-    <!-- include banner.html -->
-    <section class="banner-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p class="title-block">Banner</p>
-      </div>
-    </div>
+
+      <!-- include banner.html -->
+      <section class="banner-container">
+  <div class="banner-container">
+    <span class="banner-title">HUGS AGENCY</span>
+    <span class="banner-sub"> Kết nối thương hiệu với người dùng mạng</span>
+  </div>
+  <div class="banner-img">
+    <img src="../../images/Rectangle296.png" alt="" id="banner-img" />
   </div>
 </section>
 
-    <main class="main-container">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h4 class="title-block">HTML Boilerplate</h4>
+
+      <!-- include body.html -->
+      <main class="body-container">
+  <div class="body-title">
+    <span id="body-title">
+      HUGS Agency <span id="body-title sub">chúng tôi làm gì?</span></span
+    >
+    <div class="body-img__line">
+      <img
+        src="../../images/Rectangle344.png"
+        alt="gachngang"
+        id="body-img__line"
+      />
+    </div>
+  </div>
+</main>
+
+      <main class="main-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h4 class="title-block">HTML Boilerplate</h4>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
 
-    <!-- include footer.html -->
-    <footer class="footer-container">
+      <!-- include footer.html -->
+      <footer class="footer-container">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -69,14 +100,14 @@
     </div>
   </div>
 </footer>
-  </div>
+    </div>
 
-  <!-- include scripts.html -->
-  <!-- build:js script/script.min.js -->
+    <!-- include scripts.html -->
+    <!-- build:js script/script.min.js -->
 <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script type="text/javascript" src="scripts/script.js"></script>
 <!-- endbuild -->
 
-</body>
+  </body>
 </html>
