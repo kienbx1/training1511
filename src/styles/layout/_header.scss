@@ -20,7 +20,6 @@
     line-height: 42px;
     text-align: center;
     flex-wrap: wrap;
-
     &__item {
       margin: 18px;
       color: white;
@@ -37,7 +36,6 @@
     }
   }
 }
-
 @media only screen and (max-width: 600px) {
   .header-container {
     .header-list {
