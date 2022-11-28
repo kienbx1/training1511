@@ -1,0 +1,58 @@
+.client-container {
+  position: relative;
+  background-color: #eff8fc;
+  .client-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    color: #220440;
+    padding-top: 40px;
+  }
+  .client-line {
+    max-width: 400px;
+  }
+  .logo:first-child {
+    max-width: 110px;
+  }
+  .client-logo {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    .logo {
+      line-height: 64px;
+    }
+    .fpt {
+      max-width: 110px;
+    }
+    .shopee {
+      max-width: 159px;
+    }
+    .lazada {
+      max-width: 164px;
+    }
+    .pharma {
+      max-width: 133px;
+    }
+    .choLon {
+      max-width: 133px;
+    }
+    .ByteDance {
+      max-width: 142px;
+    }
+    .Be {
+      max-width: 111px;
+    }
+    .Axxe {
+      max-width: 158px;
+    }
+    .Samsung {
+      max-width: 133px;
+    }
+    .Fila {
+      max-width: 112px;
+    }
+  }
+}
