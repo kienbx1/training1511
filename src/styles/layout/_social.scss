@@ -22,8 +22,9 @@
   }
   .social-numbers {
     display: flex;
+    justify-content: space-around;
     .social-number {
-      margin: 2em 0 2em 2em;
+      margin: 20px 0 20px 20px;
       display: block;
       justify-content: space-between;
     }
@@ -53,7 +54,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      width: 128px;
+      min-width: 128px;
       height: 58px;
       line-height: 54px;
       border-radius: 8px;
@@ -61,9 +62,6 @@
     .nav-items:first-child {
       background-color: #0067ed;
       color: white;
-    }
-    .nav-items:last-child {
-      margin-right: 0;
     }
     .nav-icon {
       max-width: 22px;
@@ -83,7 +81,6 @@
     border-radius: 10px;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .social-container {
     position: relative;
