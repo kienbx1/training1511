@@ -21,11 +21,42 @@
 <!-- Google Font -->
     <!-- include styles.html -->
     <!-- build:css(.tmp) style/style.min.css -->
-<link rel="stylesheet" type="text/css" media="screen" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+<link
+  rel="stylesheet"
+  type="text/css"
+  media="screen"
+  href="../node_modules/bootstrap/dist/css/bootstrap.css"
+/>
 <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 <!-- endbuild -->
+
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
   </head>
   <body>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <div class="wrapper">
       <!-- include header.html -->
       <header class="header-container">
@@ -69,7 +100,7 @@
     <div class="container-title">
       <center>
         <p class="body-title">HUGS Agency</p>
-        <p class="body-title sub">chúng tôi làm gì ?</p>
+        <p class="body-title">chúng tôi làm gì ?</p>
         <img
           src="../../images/agencyLine.png"
           alt="body gach ngang"
@@ -99,7 +130,7 @@
       </div>
     </div>
     <div class="body-number">
-      <ul class="">
+      <ul>
         <li class="numerric">1</li>
         <li class="numerric active">2</li>
         <li class="numerric">3</li>
@@ -118,7 +149,7 @@
       <div class="services-title">
         <p class="">Dịch vụ của HUGS AGENCY chúng tôi</p>
         <img
-          class="services-title line"
+          class="services-title"
           src="../../images/agencyLine.png"
           alt="gachngang"
         />
@@ -184,9 +215,15 @@
       />
     </div>
     <div class="social-numbers">
-      <div class="social-number">
-        <span class="item"> 100 </span>
-        <p>Group cộng đồng</p>
+      <div class="first-row">
+        <div class="social-number">
+          <span class="item"> 100 </span>
+          <p>Group cộng đồng</p>
+        </div>
+        <div class="social-number">
+          <span class="item"> 20 </span>
+          <p>Đối tác tin cậy</p>
+        </div>
       </div>
       <div class="social-number">
         <span class="item"> 20 </span>
@@ -199,6 +236,224 @@
       <div class="social-number">
         <span class="item"> 1000 </span>
         <p>Influencer & Kols</p>
+      </div>
+    </div>
+  </div>
+  <div class="social-nav">
+    <div class="nav-items">
+      <img class="nav-icon" src="../../images/iconGaiXinh.png" alt="icon" />
+      <p>Gái xinh</p>
+    </div>
+    <div class="nav-items">
+      <img class="nav-icon" src="../../images/iconbongda.png" alt="icon" />
+      <p>Bóng đá</p>
+    </div>
+    <div class="nav-items">
+      <img class="nav-icon" src="../../images/iconGiaiTri.png" alt="icon" />
+      <p>Giải trí</p>
+    </div>
+    <div class="nav-items">
+      <img class="nav-icon" src="../../images/iconXeCo.png" alt="icon" />
+      <p>Xe cộ</p>
+    </div>
+    <div class="nav-items">
+      <img class="nav-icon" src="../../images/iconGame.png" alt="icon" />
+      <p>Game</p>
+    </div>
+    <div class="nav-items">
+      <img class="nav-icon" src="../../images/iconDuLich.png" alt="icon" />
+      <p>Du lịch</p>
+    </div>
+    <div class="nav-items">
+      <img class="nav-icon" src="../../images/iconGiaDinh.png" alt="icon" />
+      <p>Gia đình</p>
+    </div>
+  </div>
+  <div class="your-class">
+    <img src="../../images/daBong.png" class="slide-img" alt="da bong" />
+    <img src="../../images/daBong.png" class="slide-img" alt="da bong" />
+    <img src="../../images/daBong.png" class="slide-img" alt="da bong" />
+    <img src="../../images/daBong.png" class="slide-img" alt="da bong" />
+    <img src="../../images/daBong.png" class="slide-img" alt="da bong" />
+    <img src="../../images/daBong.png" class="slide-img" alt="da bong" />
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".your-class").slick({
+      centerMode: true,
+      slidesToShow: 1,
+      dots: true,
+      focusOnSelect: true,
+      infinite: true,
+      cssEase: "linear",
+      variableWidth: true,
+      variableHeight: true,
+      prevArrow: '<button class="slick-prev"> < </button>',
+      nextArrow: '<button class="slick-next"> > </button>',
+    });
+  });
+</script>
+
+
+      <!-- include News Hug Agency -->
+      <div class="news-containner">
+  <div class="news-title">
+    <p class="news-title">Tin tức HUGS AGENCY</p>
+    <img
+      class="news-title line"
+      src="../../images/agencyLine.png"
+      alt="gach ngang"
+    />
+  </div>
+  <div class="news-items">
+    <div class="first-line">
+      <div class="news-item">
+        <img class="news-img" src="../../images/gaiXinh.png" alt="gai xinh" />
+        <p class="img-des">Hot girl Đà Thành dịu dàng trong bộ váy màu trắng</p>
+      </div>
+      <div class="news-item">
+        <img class="news-img" src="../../images/daBong.png" alt="bong da" />
+        <p class="img-des">
+          Trò cưng của Lampard bất ngờ được Messi khen ngợi hết lời
+        </p>
+      </div>
+      <div class="news-item">
+        <img class="news-img" src="../../images/baNa.png" alt="ba na hill" />
+        <p class="img-des">
+          Du lịch Bà Nà để trở về tuổi thơ với những nhân vật hoạt hình Disney
+        </p>
+      </div>
+    </div>
+    <div class="first-line">
+      <div class="news-item">
+        <img class="news-img" src="../../images/xeBugati.png" alt="sieu xe" />
+        <p class="img-des">Ra mắt xe Bugati Chiron hơn 40 tỷ với 300 mã lực</p>
+      </div>
+      <div class="news-item">
+        <img class="news-img" src="../../images/lol.png" alt="lien minh" />
+        <p class="img-des">
+          Giải đấu Liên Minh Huyền Thoại được tổ chức tại Đà Nẵng
+        </p>
+      </div>
+      <div class="news-item">
+        <img class="news-img" src="../../images/thung.png" alt="thung" />
+        <p class="img-des">Du lịch Đà Nẵng mùa nắng này</p>
+      </div>
+    </div>
+    <div class="new-button">
+      <div class="button-content">
+        <p>xem thêm</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- include team Hugs -->
+      <div class="hugs-container">
+  <div class="hugs-title">
+    <p>
+      Team HUGS
+      <p>
+        Chúng tôi là những người đồng đội luôn cùng nhìn về một hướng!</p>
+    </p>
+  </div>
+  <div class="hug-items">
+    <div class="hug-img"><img  class="img-crowd" src="../../images/hug-1.png" alt="team hugs"></div>
+  </div>
+  <div class="hug-items">
+    <div class="hug-img"><img  class="img-LeVietHung" src="../../images/hug-2.png" alt="person"></div>
+  </div>
+  <div class="hug-items">
+    <div class="hug-img"><img class="img-LeVanA" src="../../images/hug-3.png" alt="person"></div>
+  </div>
+  <div class="hug-items">
+    <div class="hug-img"><img class="img-LeVanB" src="../../images/hug-4.png" alt="person"></div>
+  </div>
+  <div class="hug-items">
+    <div class="hug-img"><img class="img-joinHand" src="../../images/hug-5.png" alt="team"></div>
+  </div>
+  <div class="hug-items">
+    <div class="hug-img"><img class="img-LeVanC" src="../../images/hug-6.png" alt="person"></div>
+  </div>
+</div>
+
+
+      <!-- include client.html  -->
+      <div class="client-container">
+  <div class="client-group">
+    <div class="client-title">
+      <p>Khách hàng của HUGS AGENCY</p>
+      <img
+        class="client-line"
+        src="../../images/agencyLine.png"
+        alt="gach ngang"
+      />
+    </div>
+    <div class="client-logo">
+      <div class="logo">
+        <img class="fpt" src="../../images/fpt.png" alt="logo fpt" />
+      </div>
+      <div class="logo">
+        <img
+          class="shopee"
+          src="../../images/logoShopee.png"
+          alt="logo shopee"
+        />
+      </div>
+      <div class="logo">
+        <img
+          class="lazada"
+          src="../../images/logoLazada.png"
+          alt="logo lazada"
+        />
+      </div>
+      <div class="logo">
+        <img
+          class="pharma"
+          src="../../images/logoPharma.png"
+          alt="logo pharma"
+        />
+      </div>
+      <div class="logo">
+        <img
+          class="choLon"
+          src="../../images/logoChoLon.png"
+          alt="logo cho lon"
+        />
+      </div>
+    </div>
+    <div class="client-title">
+      <p>Đối tác khác</p>
+      <img
+        class="client-line"
+        src="../../images/agencyLine.png"
+        alt="gachngang"
+      />
+    </div>
+    <div class="client-logo">
+      <div class="logo">
+        <img
+          class="ByteDance"
+          src="../../images/logoByteDance.png"
+          alt="logo ByteDance"
+        />
+      </div>
+      <div class="logo">
+        <img class="Be" src="../../images/logoBe.png" alt="logo Be" />
+      </div>
+      <div class="logo">
+        <img class="Axxe" src="../../images/logoAxxe.png" alt="logo Axxe" />
+      </div>
+      <div class="logo">
+        <img
+          class="Samsung"
+          src="../../images/logoSamsung.png"
+          alt="logo Samsung "
+        />
+      </div>
+      <div class="logo">
+        <img class="Fila" src="../../images/logoFila.png" alt="logo Fila" />
       </div>
     </div>
   </div>
@@ -225,17 +480,5 @@
 </footer>
     </div>
     <!-- include scripts.html -->
-    <!-- build:js script/script.min.js -->
-<script
-  type="text/javascript"
-  src="../node_modules/jquery/dist/jquery.js"
-></script>
-<script
-  type="text/javascript"
-  src="../node_modules/bootstrap/dist/js/bootstrap.js"
-></script>
-<script type="text/javascript" src="scripts/script.js"></script>
-<!-- endbuild -->
-
   </body>
 </html>

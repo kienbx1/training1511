@@ -1,15 +1,20 @@
 .social-container {
   position: relative;
+  background-color: white;
   .social-group {
     position: relative;
     display: flex;
+    justify-content: center;
     .social-title {
+      line-height: 42px;
       font-family: "Quicksand";
       font-style: normal;
       font-weight: 700;
       font-size: 36px;
       line-height: 46px;
       color: #220440;
+      margin-top: auto;
+      margin-bottom: auto;
     }
     .social-line {
       max-width: 400px;
@@ -18,6 +23,7 @@
   .social-numbers {
     display: flex;
     .social-number {
+      margin: 2em 0 2em 2em;
       display: block;
       justify-content: space-between;
     }
@@ -28,6 +34,74 @@
       font-size: 40px;
       line-height: 58px;
       color: #5cbbe5;
+    }
+  }
+  .social-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    .nav-items {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #262626;
+      margin-right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 128px;
+      height: 58px;
+      line-height: 54px;
+      border-radius: 8px;
+    }
+    .nav-items:first-child {
+      background-color: #0067ed;
+      color: white;
+    }
+    .nav-items:last-child {
+      margin-right: 0;
+    }
+    .nav-icon {
+      max-width: 22px;
+      max-height: 18px;
+      text-align: center;
+      margin-top: auto;
+      padding-bottom: 20px;
+    }
+  }
+  .your-class {
+    transform: scale(0.9);
+    display: flex;
+  }
+  .slide-img {
+    min-width: 700px;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .social-container {
+    position: relative;
+    .social-group {
+      display: block;
+      justify-content: center;
+      .social-title {
+        text-align: center;
+        margin: 10px;
+        margin-top: 16px;
+      }
+      .social-numbers {
+        display: block;
+        .social-number {
+          margin: 10px;
+          text-align: center;
+        }
+      }
     }
   }
 }
