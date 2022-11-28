@@ -1,7 +1,6 @@
 .hugs-container {
   position: relative;
   width: 100%;
-  height: 110vh;
   background-color: white;
   .hugs-title {
     max-width: 500px;
@@ -14,40 +13,23 @@
     left: 13%;
     top: 15%;
   }
-  .img-crowd {
-    max-width: 271px;
-    position: absolute;
-    top: 33%;
-    left: 38%;
+  .hug-items {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    margin-left: 40%;
+    padding: 50px 0;
   }
-  .img-LeVietHung {
+  .hug-img {
     max-width: 250px;
-    position: absolute;
-    top: 12%;
-    left: 58%;
   }
-  .img-LeVanA {
-    max-width: 200px;
-    position: absolute;
-    top: 17%;
-    right: 9%;
+  .crowd {
+    margin-top: 99%;
   }
-  .img-LeVanB {
-    max-width: 235px;
-    position: absolute;
-    top: 57%;
-    left: 40.7%;
+  .leVanA {
+    margin-top: 30%;
   }
-  .img-joinHand {
-    max-width: 300px;
-    position: absolute;
-    top: 56%;
-    left: 57%;
-  }
-  .img-LeVanC {
-    max-width: 235px;
-    position: absolute;
-    top: 51%;
-    right: 6%;
+  .leVanC {
+    margin-top: 10%;
   }
 }

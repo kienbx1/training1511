@@ -66,7 +66,7 @@
       <p>Gia đình</p>
     </div>
   </div>
-  <div class="your-class">
+  <div class="social-slide">
     <img src="../../images/daBong.png" class="slide-img" alt="da bong" />
     <img src="../../images/daBong.png" class="slide-img" alt="da bong" />
     <img src="../../images/daBong.png" class="slide-img" alt="da bong" />
@@ -77,17 +77,17 @@
 </div>
 <script type="text/javascript">
   $(document).ready(function () {
-    $(".your-class").slick({
+    $(".social-slide").slick({
       centerMode: true,
       slidesToShow: 1,
       dots: true,
       focusOnSelect: true,
       infinite: true,
       cssEase: "linear",
+      prevArrow: false,
+      nextArrow: false,
       variableWidth: true,
       variableHeight: true,
-      prevArrow: '<button class="slick-prev"> < </button>',
-      nextArrow: '<button class="slick-next"> > </button>',
     });
   });
 </script>
