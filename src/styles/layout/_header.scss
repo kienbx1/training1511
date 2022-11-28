@@ -20,30 +20,30 @@
     line-height: 42px;
     text-align: center;
     flex-wrap: wrap;
-
-    .header-list__item {
+    &__item {
       margin: 18px;
       color: white;
       cursor: pointer;
-    }
-    .header-list__item:hover {
-      color: #5cbbe5;
+      &:hover {
+        color: #5cbbe5;
+      }
     }
     .contact {
       border: solid 2px white;
       border-radius: 24px;
       margin: auto;
-      width: 105px;
+      min-width: 105px;
     }
   }
 }
-
 @media only screen and (max-width: 600px) {
-  .header-list {
-    display: none !important;
-  }
-  .header-menu {
-    display: flex !important;
-    flex-wrap: wrap;
+  .header-container {
+    .header-list {
+      display: none;
+    }
+    .header-menu {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 }
