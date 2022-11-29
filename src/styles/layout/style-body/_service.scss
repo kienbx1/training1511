@@ -1,17 +1,17 @@
-.container-service {
+.service {
   background-color: rgba(92, 187, 229, 0.1);
 
-  .title-service {
+  .service-content__title {
     margin: 80px 0 30px 0;
     color: #220440;
   }
 
-  .list-service {
+  .service-content__list-services {
     display: flex;
     justify-content: space-around;
   }
 
-  .service-content {
+  .service__content {
     font-weight: 700;
     text-align: center;
     margin-top: 30px;
