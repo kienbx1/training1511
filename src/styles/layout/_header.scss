@@ -1,4 +1,4 @@
-.header-container {
+.header {
   font-family: "Quicksand", sans-serif;
   width: 100%;
   font-weight: 500;
@@ -7,22 +7,21 @@
   z-index: 99;
   overflow: hidden;
 
-  .container {
+  .header__content {
     height: 100%;
 
-    .nav {
+    .header__content__nav {
       align-items: center;
       justify-content: space-between;
       height: 100%;
 
-      .nav-list {
+      .nav__list-links {
         display: flex;
 
         .nav-link {
           text-transform: capitalize;
           font-size: 15px;
           color: #fff;
-
           &:last-child {
             margin-left: 10px;
           }
@@ -31,14 +30,14 @@
           color: #5cbbe5;
         }
 
-        .contact {
+        .nav-link--rounded {
           border: 2px solid #fff;
           border-radius: 24px;
         }
       }
     }
 
-    .nav-responsive {
+    .nav--responsive {
       display: none;
     }
   }
