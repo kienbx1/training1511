@@ -1,46 +1,48 @@
-.banner-container {
+.banner {
   width: 100%;
   height: 100vh;
   background: url("/src/images/bg3@4x.png") top center / cover no-repeat;
   position: relative;
   overflow: hidden;
 
-  .banner-text {
+  .banner__text {
     color: #fff;
     position: absolute;
+    text-align: center;
     left: 50%;
-    transform: translateX(-50%);
+    top: 25%;
+    transform: translate(-50%, -50%);
+
+    .text__title {
+      font-size: 42px;
+      text-transform: uppercase;
+      line-height: 52px;
+      font-weight: 700;
+      top: 142px;
+    }
+
+    .text__subtitle {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      top: 234px;
+      text-transform: uppercase;
+      opacity: 0.85;
+    }
   }
 
-  .title {
-    font-size: 42px;
-    text-transform: uppercase;
-    line-height: 52px;
-    font-weight: 700;
-    top: 142px;
-  }
-
-  .subtitle {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    top: 234px;
-    text-transform: uppercase;
-    opacity: 0.85;
-  }
-
-  .image-group {
+  .banner__img {
     margin: 280px auto 0;
     width: 100%;
   }
 
-  .banner-vector {
+  .banner__vector {
     position: absolute;
     top: 289px;
     left: -266px;
   }
 
-  .contact-list {
+  .banner__list-contacts {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -48,7 +50,7 @@
     top: 200px;
     right: 27px;
 
-    .contact-link a {
+    .banner__contact-link a {
       display: block;
       width: 36px;
       height: 36px;
@@ -57,10 +59,10 @@
       background-color: #eea4c9;
       border-radius: 50%;
     }
-    .contact-link a:hover {
+    .banner__contact-link a:hover {
       background-color: #5cbbe5;
     }
-    .contact-link img {
+    .banner__contact-link img {
       margin-bottom: 4px;
     }
   }
