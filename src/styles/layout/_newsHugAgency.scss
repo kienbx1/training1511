@@ -1,4 +1,4 @@
-.news-containner {
+.news-container {
   position: relative;
   background-color: #fdf6fa;
   .news-title {
@@ -10,18 +10,13 @@
     text-align: center;
     color: #220440;
     .line {
-      max-width: 400px;
+      width: 400px;
+      max-width: 100%;
     }
-  }
-  .news-items {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
   }
   .news-item {
     max-width: 360px;
-    display: block;
-    margin: 20px;
+    margin: 10px;
     justify-content: center;
     .news-img {
       max-width: 360px;
