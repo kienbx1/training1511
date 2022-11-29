@@ -1,47 +1,120 @@
+.hug__items--mobile {
+  display: none;
+}
 .hugs-container {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   background-color: white;
   .hugs-title {
-    max-width: 500px;
-    font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 46px;
     color: #220440;
-    position: absolute;
-    left: 13%;
-    top: 15%;
+    margin-top: 6%;
+    margin-left: 10%;
+    &:last-child {
+      font-weight: 700;
+    }
   }
   .hug-items {
-    margin-left: 20%;
-    padding: 50px 0;
-    .hug-img {
-      max-width: 220px;
-    }
-    .img-crowd {
-      float: right;
-      margin-top: 40%;
-    }
-    .img-leVietHung {
-      margin-top: 20px;
-      margin-left: -20px;
-    }
-    .img-dinhLongBinh {
-      max-width: 180px;
-      margin-left: 20px;
-      margin-top: 30%;
-    }
-    .img-nguyenVanTai {
-      float: right;
-      margin-top: 20px;
-      max-width: 180px;
-    }
-    .img-tranThanhTrung {
-      margin-top: -10px;
+    justify-content: center;
+    margin-left: 30%;
+    margin-top: -10%;
+    .hug-item {
+      &:first-child {
+        margin-top: 20%;
+        margin-left: 4%;
+      }
+      &:nth-child(2) {
+        margin-left: -4%;
+      }
+      &:nth-child(3) {
+        margin-left: -4%;
+        margin-top: -2%;
+      }
+      &:nth-child(4) {
+        margin-top: 3%;
+        margin-left: 2%;
+      }
+      &:nth-child(5) {
+        margin-left: -4%;
+      }
+      &:nth-child(6) {
+      }
+      margin-left: -5%;
+      .hug-img {
+        max-width: 220px;
+      }
     }
   }
-
-  .img-dinhLongBinh {
+}
+@media only screen and (max-width: 990px) {
+  .hugs-container {
+    display: none;
+    visibility: hidden;
+    .hugs__title {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 32px;
+      text-align: center;
+      color: #220440;
+      &:last-child {
+        font-weight: 700;
+      }
+    }
+  }
+  .hug__items--mobile {
+    display: block;
+    visibility: visible;
+  }
+  .hug-img {
+    width: 110px;
+    padding: 10px;
+  }
+  .hug__items {
+    transform: scale(0.9);
+  }
+  .hugs__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #220440;
+    padding: 20px;
+    &:first-child {
+      font-weight: 500;
+      padding-bottom: 0;
+    }
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: -15px;
+    list-style-type: none;
+    .slick-dot {
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin: 0 20px;
+      border: none;
+      border-radius: 100%;
+      background-color: #ceebf7;
+    }
+    li {
+      margin: 0 15px;
+      &.slick-active {
+        margin: 0 13px;
+        &::after {
+          display: none;
+        }
+        .slick-dot {
+          background-color: #5cbbe5;
+          margin: 0 20px;
+          width: 30px;
+          border-radius: 10px;
+        }
+      }
+    }
   }
 }

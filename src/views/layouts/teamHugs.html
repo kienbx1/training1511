@@ -1,51 +1,63 @@
-<div class="hugs-container">
-  <div class="hugs-title">
-    <p>
-      Team HUGS
-      <br />
-      Chúng tôi là những người đồng đội luôn cùng nhìn về một hướng!
-    </p>
-  </div>
-  <div class="container hug-items">
-    <div class="row">
-      <div class="hug-item col-6">
-        <img
-          class="hug-img img-crowd"
-          src="../../images/hug-1.png"
-          alt="team hugs"
-        />
+<div class="hugs-container container">
+  <div class="row justify-content-start">
+    <div class="hugs-title col-3">
+      <div class="hugs-title">
+        <p class="hugs-title">Team HUGS</p>
+        <p sclass="hugs-title">
+          Chúng tôi là những người đồng đội luôn cùng nhìn về một hướng!
+        </p>
       </div>
-      <div class="col-2">
-        <img
-          class="hug-img img-leVietHung"
-          src="../../images/hug-2.png"
-          alt="person"
-        />
-      </div>
-      <div class="col-2">
-        <img
-          class="hug-img img-dinhLongBinh"
-          src="../../images/hug-4.png"
-          alt="person"
-        />
-      </div>
-      <div class="col-6">
-        <img
-          class="img-nguyenVanTai hug-img"
-          src="../../images/hug-3.png"
-          alt="person"
-        />
-      </div>
-      <div class="col-2.5 hands">
-        <img class="hug-img" src="../../images/hug-5.png" alt="team" />
-      </div>
-      <div class="col-3">
-        <img
-          class="img-tranThanhTrung hug-img"
-          src="../../images/hug-6.png"
-          alt="person"
-        />
+    </div>
+    <div class="hug-items container">
+      <div class="row">
+        <div class="hug-item col-4">
+          <img class="hug-img" src="../../images/hug-1.png" alt="team hugs" />
+        </div>
+        <div class="hug-item col-4">
+          <img class="hug-img" src="../../images/hug-4.png" alt="person" />
+        </div>
+        <div class="hug-item col-4">
+          <img class="hug-img" src="../../images/hug-2.png" alt="person" />
+        </div>
+        <div class="hug-item col-4">
+          <img class="hug-img" src="../../images/hug-3.png" alt="person" />
+        </div>
+        <div class="hug-item col-4">
+          <img class="hug-img" src="../../images/hug-5.png" alt="team" />
+        </div>
+        <div class="hug-item col-3">
+          <img class="hug-img" src="../../images/hug-6.png" alt="person" />
+        </div>
       </div>
     </div>
   </div>
 </div>
+<div class="hug__items--mobile">
+  <div class="hugs__title">
+    <p class="hugs__title">Team HUGS</p>
+    <p sclass="hugs__title">
+      Chúng tôi là những người đồng đội luôn cùng nhìn về một hướng!
+    </p>
+  </div>
+  <div class="hug__items">
+    <img class="hug-img" src="../../images/hug-1.png" alt="team hugs" />
+    <img class="hug-img" src="../../images/hug-2.png" alt="person" />
+    <img class="hug-img" src="../../images/hug-4.png" alt="person" />
+    <img class="hug-img" src="../../images/hug-3.png" alt="person" />
+    <img class="hug-img" src="../../images/hug-5.png" alt="team" />
+    <img class="hug-img" src="../../images/hug-6.png" alt="person" />
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".hug__items").slick({
+      prevArrow: false,
+      nextArrow: false,
+      adaptiveHeight: true,
+      dots: true,
+      customPaging: function (slider, i) {
+        return '<a class="slick-dot"/a>';
+      },
+    });
+  });
+</script>

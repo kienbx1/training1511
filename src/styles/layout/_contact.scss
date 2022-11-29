@@ -1,5 +1,6 @@
 .contact-container {
   background-color: white;
+  padding: 60px 0;
   .contact__title {
     display: block;
     text-align: center;
@@ -11,19 +12,23 @@
     }
     .contact__title--line {
       max-width: 400px;
+      width: 100%;
     }
   }
-  .contact__group {
+  .contact__info {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
-    .group__items {
+    .group__contacts {
+      flex-wrap: wrap;
+      justify-content: center;
       &__address {
         display: flex;
         margin-bottom: 20px;
         .address__img {
           margin-right: 20px;
           max-width: 52px;
+          max-height: 52px;
         }
         .address__name {
           font-style: normal;
@@ -41,20 +46,71 @@
         }
       }
     }
-    .group__get-information {
+    .group__inputs {
+      max-width: 610px;
+      width: 100%;
+      display: block;
+      justify-content: center;
+      .group__input__label {
+        display: none;
+      }
       .group__input {
-        border: 1px solid;
-        color: #c8d0d4;
+        background: #ffffff;
+        border: 1px solid #c8d0d5;
         border-radius: 4px;
-        min-width: 610px;
+        max-width: 610px;
         justify-content: center;
-
-        &:first-child {
-          min-width: 610px;
-          margin-bottom: 40px;
+        margin-bottom: 50px;
+        min-height: 45px;
+        &-name {
+          width: 100%;
         }
-        &:nth-child(2) {
-          min-width: 290px;
+        &-email {
+          width: 49%;
+        }
+      }
+    }
+    .new-button {
+      margin: 0 auto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: #00405c;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px;
+      height: auto;
+      .button-content {
+        flex-wrap: wrap;
+        max-width: 210px;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 24px;
+        background-image: linear-gradient(90deg, #5cbbe5, #eea4c9);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact-container {
+    .contact__info {
+      .group__inputs {
+        max-width: 335px;
+        width: 100%;
+        .group__input__label {
+          display: block;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          color: #262626;
+        }
+        .group__input {
+          width: 100%;
         }
       }
     }

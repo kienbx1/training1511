@@ -1,5 +1,5 @@
 <div class="contact-container">
-  <div class="contact__title">
+  <div class="contact__title col-12">
     <p class="contact__title--des">Liên hệ với chúng tôi</p>
     <img
       class="contact__title--line"
@@ -7,58 +7,87 @@
       alt="gach ngang"
     />
   </div>
-  <div class="contact__group">
-    <div class="group__items">
-      <div class="group__items__address">
-        <img
-          class="address__img"
-          src="../../images/address.png"
-          alt="dia chi"
+  <div class="container">
+    <div
+      class="contact__info row justify-content-md-center justify-content-sm-center"
+    >
+      <div class="group__contacts col-12 col-sm-12 col-md-6 col-lg-5">
+        <div class="group__contacts__address">
+          <img
+            class="address__img"
+            src="../../images/address.png"
+            alt="dia chi"
+          />
+          <div class="address__title">
+            <p class="address__name">Địa chỉ</p>
+            <p class="address__des">55 Lý Thường Kiệt, Hải Châu, TP Đà Nẵng</p>
+          </div>
+        </div>
+        <div class="group__contacts__address">
+          <img
+            class="address__img"
+            src="../../images/email.png"
+            alt="dia chi"
+          />
+          <div class="address__title">
+            <p class="address__name">Email</p>
+            <p class="address__des">lienhe@hugs.agency</p>
+          </div>
+        </div>
+        <div class="group__contacts__address">
+          <img
+            class="address__img"
+            src="../../images/phonenumber.png"
+            alt="dia chi"
+          />
+          <div class="address__title">
+            <p class="address__name">Số điện thoại</p>
+            <p class="address__des">0924.392.222</p>
+          </div>
+        </div>
+        <div class="group__contacts__address">
+          <img class="address__img" src="../../images/face.png" alt="dia chi" />
+          <div class="address__title">
+            <p class="address__name">Fanpage</p>
+            <p class="address__des">www.fb.com/hugs.agency/</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="group__inputs col-12 col-sm-12 col-md-6 col-lg-7 justify-content-md-center"
+      >
+        <label for="group__input" class="group__input__label">Họ tên</label>
+        <input
+          type="text"
+          class="group__input group__input-name"
+          placeholder="Nhập số họ tên"
         />
-        <div class="address__title">
-          <p class="address__name">Địa chỉ</p>
-          <p class="address__des">55 Lý Thường Kiệt, Hải Châu, TP Đà Nẵng</p>
-        </div>
-      </div>
-      <div class="group__items__address">
-        <img class="address__img" src="../../images/email.png" alt="dia chi" />
-        <div class="address__title">
-          <p class="address__name">Email</p>
-          <p class="address__des">lienhe@hugs.agency</p>
-        </div>
-      </div>
-      <div class="group__items__address">
-        <img
-          class="address__img"
-          src="../../images/phonenumber.png"
-          alt="dia chi"
+        <label for="group__input" class="group__input__label"
+          >Số điện thoại</label
+        >
+        <input
+          type="text"
+          class="group__input group__input-email"
+          placeholder="Nhập số điện thoại"
         />
-        <div class="address__title">
-          <p class="address__name">Số điện thoại</p>
-          <p class="address__des">0924.392.222</p>
+        <label for="group__input" class="group__input__label">Email</label>
+        <input
+          type="text"
+          class="group__input group__input-email"
+          placeholder="Nhập địa chỉ email"
+        />
+        <label for="group__input" class="group__input__label">Nội dung</label>
+        <input
+          type="text"
+          class="group__input group__input-name"
+          placeholder="Nhập nội dung"
+        />
+        <div class="new-button col-12 col-sm-12 col-md-6 col-lg-5">
+          <div class="button-content">
+            <p>Nhận tư vấn</p>
+          </div>
         </div>
       </div>
-      <div class="group__items__address">
-        <img class="address__img" src="../../images/face.png" alt="dia chi" />
-        <div class="address__title">
-          <p class="address__name">Fanpage</p>
-          <p class="address__des">www.fb.com/hugs.agency/</p>
-        </div>
-      </div>
-    </div>
-    <div class="group__get-information">
-      <input type="text" class="group__input" placeholder="Nhập họ tên" />
-      <input
-        type="text"
-        class="group__input"
-        placeholder="Nhập số điện thoại"
-      />
-      <input
-        type="text"
-        class="group__input"
-        placeholder="Nhập địa chỉ email"
-      />
-      <input type="text" class="group__input" placeholder="Nhập nội dung" />
     </div>
   </div>
 </div>

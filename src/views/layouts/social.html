@@ -1,10 +1,8 @@
-<div class="social-container">
-  <div class="social-group">
+<div class="social-container container">
+  <div class="row justify-content-sm-center social-group">
     <div class="social-title">
-      <p>
-        Cộng đồng và <br />
-        Đối tác của HUGS AGENCY
-      </p>
+      <p>Cộng đồng và</p>
+      <p>Đối tác của HUGS AGENCY</p>
       <img
         class="social-line"
         src="../../images/socialLine.png"
@@ -12,23 +10,28 @@
       />
     </div>
     <div class="social-numbers">
-      <div class="first-row">
-        <div class="social-number">
-          <span class="item"> 100 </span>
-          <p>Group cộng đồng</p>
+      <div class="container">
+        <div class="row">
+          <div class="social-number col-sm-6">
+            <span class="item"> 100 </span>
+            <p>Group cộng đồng</p>
+          </div>
+
+          <div class="social-number col-sm-6">
+            <span class="item"> 20 </span>
+            <p>Đối tác tin cậy</p>
+          </div>
         </div>
-      </div>
-      <div class="social-number">
-        <span class="item"> 20 </span>
-        <p>Đối tác tin cậy</p>
-      </div>
-      <div class="social-number">
-        <span class="item"> 6.000.000 </span>
-        <p>Người dùng facebook</p>
-      </div>
-      <div class="social-number">
-        <span class="item"> 1000 </span>
-        <p>Influencer & Kols</p>
+        <div class="row">
+          <div class="social-number col-sm-6">
+            <span class="item"> 6.000.000 </span>
+            <p>Người dùng facebook</p>
+          </div>
+          <div class="social-number col-sm-6">
+            <span class="item"> 1000 </span>
+            <p>Influencer & Kols</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -63,12 +66,28 @@
     </div>
   </div>
   <div class="social-slide">
-    <img src="../../images/hoa.png" class="slide-img" alt="da bong" />
-    <img src="../../images/hoa.png" class="slide-img" alt="da bong" />
-    <img src="../../images/hoa.png" class="slide-img" alt="da bong" />
-    <img src="../../images/hoa.png" class="slide-img" alt="da bong" />
-    <img src="../../images/hoa.png" class="slide-img" alt="da bong" />
-    <img src="../../images/hoa.png" class="slide-img" alt="da bong" />
+    <img src="../../images/hoa.png" class="slide-img" alt="hoa tulip" />
+    <img
+      src="../../images/hoa-tulip-1.jpg"
+      class="slide-img"
+      alt="hoa tuplip"
+    />
+    <img
+      src="../../images/hoa-tulip-2.jpg"
+      class="slide-img"
+      alt="hoa tuplip"
+    />
+    <img
+      src="../../images/hoa-tulip-3.jpg"
+      class="slide-img"
+      alt="hoa tuplip"
+    />
+    <img src="../../images/hoa-tulip4.jpg" class="slide-img" alt="hoa tuplip" />
+    <img
+      src="../../images/hoa-tulip-5.jpg"
+      class="slide-img"
+      alt="hoa tuplip"
+    />
   </div>
 </div>
 <script type="text/javascript">
@@ -76,14 +95,48 @@
     $(".social-slide").slick({
       centerMode: true,
       slidesToShow: 1,
-      dots: true,
       focusOnSelect: true,
-      infinite: true,
-      cssEase: "linear",
+      adaptiveHeight: true,
       prevArrow: false,
       nextArrow: false,
       variableWidth: true,
       variableHeight: true,
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+      ],
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".social-nav").slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      prevArrow: false,
+      nextArrow: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            infinite: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+      ],
     });
   });
 </script>
