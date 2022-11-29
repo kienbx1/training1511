@@ -14,22 +14,34 @@
     top: 15%;
   }
   .hug-items {
-    max-width: 800px;
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    margin-left: 40%;
+    margin-left: 20%;
     padding: 50px 0;
+    .hug-img {
+      max-width: 220px;
+    }
+    .img-crowd {
+      float: right;
+      margin-top: 40%;
+    }
+    .img-leVietHung {
+      margin-top: 20px;
+      margin-left: -20px;
+    }
+    .img-dinhLongBinh {
+      max-width: 180px;
+      margin-left: 20px;
+      margin-top: 30%;
+    }
+    .img-nguyenVanTai {
+      float: right;
+      margin-top: 20px;
+      max-width: 180px;
+    }
+    .img-tranThanhTrung {
+      margin-top: -10px;
+    }
   }
-  .hug-img {
-    max-width: 250px;
-  }
-  .crowd {
-    margin-top: 99%;
-  }
-  .leVanA {
-    margin-top: 30%;
-  }
-  .leVanC {
-    margin-top: 10%;
+
+  .img-dinhLongBinh {
   }
 }
