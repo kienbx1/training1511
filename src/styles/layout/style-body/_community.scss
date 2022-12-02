@@ -1,10 +1,10 @@
 .community {
-  .community-stats {
+  .community__stats {
     display: flex;
     align-items: center;
     justify-content: space-around;
 
-    .community-stats__title {
+    .community__stats__title {
       .title {
         font-weight: 700;
         font-size: 36px;
@@ -17,7 +17,7 @@
       }
     }
 
-    .community-stats__quantities {
+    .community__stats__quantities {
       display: grid;
       grid-template-columns: 1fr 1fr;
       line-height: 46px;
@@ -43,13 +43,13 @@
     }
   }
 
-  .community-menu {
+  .community__menu {
     display: flex;
     justify-content: space-around;
     margin: 64px auto 36px;
     width: 80%;
 
-    .community-menu__link {
+    .community__menu__link {
       display: flex;
       align-items: center;
       padding: 15px;
@@ -62,11 +62,11 @@
         font-weight: 500;
       }
     }
-    .community-menu__link:hover {
+    .community__menu__link:hover {
       background-color: #0067ed;
       color: #fff;
     }
-    .community-menu__link:hover .link__title {
+    .community__menu__link:hover .link__title {
       color: #fff !important;
     }
   }
@@ -75,7 +75,7 @@
     display: none;
   }
 
-  .community-slider {
+  .community__slider {
     position: relative;
     width: 100%;
     display: flex;
@@ -91,7 +91,7 @@
       opacity: 1;
     }
 
-    .community-slider__item {
+    .community__slider__item {
       position: relative;
 
       .item__img {
@@ -115,7 +115,7 @@
         z-index: 2;
       }
 
-      .item__line-title {
+      .item__line__title {
         position: absolute;
         bottom: 71px;
         left: 50%;

@@ -1,14 +1,14 @@
 .introduction {
-  .introduction-content {
+  .introduction__content {
     position: relative;
     margin-bottom: 162px;
 
-    .introduction-content__img {
+    .introduction__content__img {
       max-width: 100%;
       margin-left: 70px;
     }
 
-    .introduction-content__descs {
+    .introduction__content__descs {
       background-color: #6823cf;
       width: 500px;
       max-width: 100%;
@@ -28,7 +28,7 @@
       }
     }
 
-    .introduction-content__vectors {
+    .introduction__content__vectors {
       .vector {
         position: absolute;
 
@@ -51,7 +51,7 @@
     }
   }
 
-  .introduction__dots-slider {
+  .introduction__dots__slider {
     display: none;
   }
 }

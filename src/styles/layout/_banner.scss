@@ -5,7 +5,7 @@
   position: relative;
   overflow: hidden;
 
-  .banner__text {
+  .banner__content__text {
     color: #fff;
     position: absolute;
     text-align: center;
@@ -31,18 +31,18 @@
     }
   }
 
-  .banner__img {
+  .banner__content__img {
     margin: 280px auto 0;
     width: 100%;
   }
 
-  .banner__vector {
+  .banner__content__vector {
     position: absolute;
     top: 289px;
     left: -266px;
   }
 
-  .banner__list-contacts {
+  .banner__contacts {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -50,20 +50,26 @@
     top: 200px;
     right: 27px;
 
-    .banner__contact-link a {
-      display: block;
-      width: 36px;
-      height: 36px;
-      line-height: 36px;
-      text-align: center;
-      background-color: #eea4c9;
-      border-radius: 50%;
+    .banner__contacts__link {
+      .link {
+        display: block;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        background-color: #eea4c9;
+        border-radius: 50%;
+      }
     }
-    .banner__contact-link a:hover {
-      background-color: #5cbbe5;
+    .banner__contacts__link {
+      .link:hover {
+        background-color: #5cbbe5;
+      }
     }
-    .banner__contact-link img {
-      margin-bottom: 4px;
+    .banner__contacts__link {
+      .link__img {
+        margin-bottom: 4px;
+      }
     }
   }
 }

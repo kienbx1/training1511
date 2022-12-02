@@ -1,4 +1,4 @@
-$(".community-slider").slick({
+$(".community__slider").slick({
   centerMode: true,
   infinite: true,
   centerPadding: "30px",
