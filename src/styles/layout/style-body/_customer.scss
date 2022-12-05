@@ -1,0 +1,14 @@
+.customer {
+  background-color: rgba(92, 187, 229, 0.1);
+
+  .customer__list {
+    display: flex;
+    justify-content: space-around;
+    margin: 96px 0 130px;
+    align-items: center;
+  }
+
+  .customer__list.customer__other {
+    margin-bottom: 80px;
+  }
+}
