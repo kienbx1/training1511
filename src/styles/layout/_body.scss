@@ -11,69 +11,69 @@
         font-weight: 700;
         font-size: 36px;
         line-height: 46px;
-      }
-      .body-title:first-child {
-        margin-top: 40px;
+        &:first-child {
+          margin-top: 40px;
+        }
+        &:last-child {
+          max-width: 400px;
+        }
       }
     }
     .body-img__Hugs {
-      position: absolute;
-      display: block;
       border-radius: 15px;
-      left: 25%;
-      top: 25%;
-      max-width: 100%;
-      z-index: 1;
+      z-index: 10;
     }
-    .body-number {
-      position: absolute;
-      left: 18%;
-      top: 40%;
+    .hugs_slide {
+      max-width: 850px;
+      margin-left: 24%;
+      margin-top: 5%;
     }
-    .numerric {
-      line-height: 24px;
-      font-weight: 700;
-      margin: 15px;
-      color: #2b2b2b;
-      opacity: 0.35;
-      cursor: pointer;
+    .slick-slide {
+      position: relative;
     }
-    .active {
-      line-height: 24px;
-      font-weight: 700;
-      color: #2b2b2b;
-      cursor: pointer;
-      opacity: 1;
-      margin-left: -12px;
-      &::after {
-        content: "";
-        font-weight: 50;
-        position: absolute;
-        margin-top: -6px;
-        margin-left: 25px;
-        background-color: black;
-        max-width: 1px;
-        max-height: 37px;
-        transform: rotate(90deg);
+    .slick-dots {
+      transform: translate(-10%, -71%);
+      .slick-dot {
+        color: #2b2b2b;
+      }
+      li {
+        display: block;
+        margin: 20px 0;
+      }
+      li.slick-active {
+        font-weight: 700;
+        transform: scale(1.2);
+        margin-left: -16px;
+        &::after {
+          content: "";
+          font-weight: 500;
+          position: absolute;
+          margin-top: -6px;
+          margin-left: 25px;
+          background-color: #6823cf;
+          width: 1px;
+          height: 35px;
+          transform: rotate(90deg);
+        }
       }
     }
     .body-content {
-      position: absolute;
-      max-width: 100%;
-      z-index: 10;
+      position: relative;
+      margin: -180px 0 0 300px;
+      padding: 16px;
       background-color: #6823cf;
+      overflow: visible;
       border-radius: 12px;
       box-shadow: 0 2px 24px rgba(0, 0, 0, 0.08);
-      right: 15%;
-      top: 60%;
     }
     .body-content__text {
       font-weight: 500;
       font-size: 14px;
       line-height: 24px;
       color: white;
-      margin: 30px;
-      max-width: 410px;
+      overflow: hidden;
+      max-height: 250px;
+      margin: 2%;
     }
     .img-dots {
       z-index: -1;
@@ -88,22 +88,26 @@
     background-color: #eff8fc;
     width: 100%;
     min-height: 520px;
-    margin-top: 30px;
     .services-title {
+      padding-top: 20px;
+      color: #220440;
       font-weight: 700;
       font-size: 36px;
       line-height: 46px;
-      text-align: center;
-      color: #220440;
+      &:last-child {
+        max-width: 400px;
+      }
     }
     .services-group {
       display: flex;
       justify-content: space-around;
     }
     .services-img {
-      width: 70%;
+      max-width: 200px;
+      width: 100%;
       height: auto;
       text-align: center;
+      margin-top: 20px;
     }
     .service-img__des {
       text-transform: uppercase;
@@ -127,16 +131,49 @@
       }
       .body-img__Hugs {
         position: absolute;
-        top: 20%;
-        left: 0;
-        z-index: -1;
+        max-width: 100%;
+        z-index: -10;
       }
       .body-content {
-        position: absolute;
-        max-width: 100%;
+        position: relative;
+        margin: 50% 0 0 0;
         width: 100%;
-        top: 50%;
-        right: 0;
+      }
+      .hugs_slide {
+        margin-left: 0;
+      }
+      .slick-slide {
+        margin: 0 20px;
+      }
+      .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin: -15px;
+        list-style-type: none;
+        .slick-dot {
+          display: block;
+          width: 20px;
+          height: 20px;
+          margin: 0 20px;
+          border: none;
+          border-radius: 100%;
+          background-color: #ceebf7;
+        }
+        li {
+          margin: 0 15px;
+          &.slick-active {
+            margin: 0 13px;
+            &::after {
+              display: none;
+            }
+            .slick-dot {
+              background-color: #5cbbe5;
+              margin: 0 20px;
+              width: 30px;
+              border-radius: 10px;
+            }
+          }
+        }
       }
       .body-content__text {
         max-width: 100%;
@@ -152,7 +189,6 @@
     .body-services {
       position: relative;
       margin-top: 0;
-
       .services-title {
         text-align: center;
         color: #220440;
@@ -160,11 +196,11 @@
       }
       .services-group {
         display: block;
+        margin-left: 33%;
       }
       .services-img {
         width: 75%;
         height: auto;
-        text-align: center;
       }
     }
   }

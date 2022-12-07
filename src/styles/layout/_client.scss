@@ -1,0 +1,28 @@
+.client-container {
+  position: relative;
+  background-color: #eff8fc;
+  .client-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    color: #220440;
+    padding-top: 40px;
+  }
+  .client-line {
+    max-width: 400px;
+  }
+  .client-logos {
+    padding-bottom: 50px;
+    margin-top: 30px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .img-logo {
+      max-width: 200px;
+      margin: 20px;
+    }
+  }
+}
