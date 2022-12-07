@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- include head.html -->
-  <title>HTML Boilerplate</title>
+  <head>
+    <!-- include head.html -->
+    <title>HTML Boilerplate</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
@@ -19,64 +19,853 @@
 <meta property="og:type" content="">
 <meta property="og:url" content="" />
 <!-- Google Font -->
-  <!-- include styles.html -->
-  <!-- build:css(.tmp) style/style.min.css -->
+    <!-- include styles.html -->
+    <!-- build:css(.tmp) style/style.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
 <!-- endbuild -->
-</head>
-<body>
-  <div class="wrapper">
-    <!-- include header.html -->
-    <header class="header-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Header Container</p>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- include header.html -->
+      <header class="header">
+  <div class="container header__content">
+    <div class="nav header__content__nav">
+      <img class="nav__logo" src="../../images/Group.png" />
+      <ul class="nav__list-links">
+        <li><a href="#" class="nav-link">trang chủ</a></li>
+        <li><a href="#introduction" class="nav-link">giới thiệu</a></li>
+        <li><a href="#service" class="nav-link">dịch vụ</a></li>
+        <li><a href="#community" class="nav-link">cộng đồng</a></li>
+        <li><a href="#news" class="nav-link">tin tức</a></li>
+        <li><a href="#customer" class="nav-link">khách hàng</a></li>
+        <li>
+          <a href="#contact" class="nav-link nav-link--rounded">liên hệ</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav--responsive">
+      <div class="nav__logo">
+        <img src="/src/images/imagesResponsive/logoResponsive.png" alt="logo" />
+      </div>
+      <div class="nav__menu-btn">
+        <img src="/src/images/imagesResponsive/menu.png" alt="menu button" />
       </div>
     </div>
   </div>
 </header>
 
-    <!-- include banner.html -->
-    <section class="banner-container">
+
+      <!-- include banner.html -->
+      <section class="banner">
+  <div class="banner__content">
+    <div class="banner__content__text">
+      <h1 class="text__title">hugs agency</h1>
+      <p class="text__subtitle">Kết nối thương hiệu với người dùng mạng</p>
+    </div>
+    <img
+      class="banner__content__img"
+      src="/src/images/Group1.png"
+      alt="banner group"
+    />
+    <img
+      class="banner__content__vector"
+      src="/src/images/Vector.png"
+      alt="vector"
+    />
+  </div>
+
+  <ul class="banner__contacts">
+    <li class="banner__contacts__link">
+      <a class="link" href=""
+        ><img class="link__img" src="/src/images/VectorSun.png"
+      /></a>
+    </li>
+    <li class="banner__contacts__link">
+      <a class="link" href=""
+        ><img class="link__img" src="/src/images/path.png"
+      /></a>
+    </li>
+    <li class="banner__contacts__link">
+      <a class="link" href=""
+        ><img class="link__img" src="/src/images/VectorZalo.png"
+      /></a>
+    </li>
+    <li class="banner__contacts__link">
+      <a class="link" href=""
+        ><img class="link__img" src="/src/images/VectorSkype.png"
+      /></a>
+    </li>
+    <li class="banner__contacts__link">
+      <a class="link" href=""
+        ><img class="link__img" src="/src/images/VectorPhone.png"
+      /></a>
+    </li>
+  </ul>
+</section>
+ <main class="main-container">
+  <div id="introduction" class="row introduction">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p class="title-block">Banner</p>
+    <h2 class="introduction__title">HUGS Agency chúng tôi làm gì?</h2>
+    <img class="line" src="/src/images/lineBottom.png" />
+    <div class="introduction__content">
+      <img
+        class="introduction__content__img"
+        src="/src/images/f1.png"
+        alt="image introduction"
+      />
+
+      <div class="introduction__content__descs">
+        <p class="desc">
+          Hugs Agency là tập hợp những freelance đầy tài năng có nhiều năm kinh
+          nghiệm trong lĩnh vực của mình với nhiều thành tích nổi bật. Và khi họ
+          gặp nhau, những ý tưởng lớn gặp nhau và từ đó cái tên Hugs Agency ra
+          đời.
+        </p>
+        <p class="desc">
+          Nắm bắt xu hướng truyền thông trên mạng xã hội đang trở thành công cụ
+          quảng cáo không thể thiếu cho các doanh nghiệp tại Việt Nam. Hugs
+          Agency sẽ là kênh kết nối doanh nghiệp với khách hàng của mình bằng
+          những nội dung số sáng tạo và hiệu quả. Bên cạnh đó Hugs Agency còn là
+          một nhà tổ chức sự kiện chuyên nghiệp với châm ngôn “Ở đâu, sự kiện gì
+          chúng tôi đều sẽ làm tốt!
+        </p>
+      </div>
+
+      <div class="introduction__content__vectors">
+        <img class="vector" src="/src/images/MainGroupImg.png" />
+        <img class="vector" src="/src/images/MainGroupImg.png" />
+        <img class="vector" src="/src/images/Group2187.png" />
+      </div>
+    </div>
+
+    <div class="introduction__dots__slider">
+      <img
+        src="/src/images/dots-slider-introduction/dot(1).png"
+        alt="dot slider"
+        class="dot"
+      />
+      <img
+        src="/src/images/dots-slider-introduction/dot(5).png"
+        alt="dot slider"
+        class="dot"
+      />
+      <img
+        src="/src/images/dots-slider-introduction/dot(2).png"
+        alt="dot slider"
+        class="dot"
+      />
+      <img
+        src="/src/images/dots-slider-introduction/dot(3).png"
+        alt="dot slider"
+        class="dot"
+      />
+      <img
+        src="/src/images/dots-slider-introduction/dot(4).png"
+        alt="dot slider"
+        class="dot"
+      />
+    </div>
+  </div>
+</div>
+
+  <div id="service" class="row service">
+  <div class="col">
+    <div class="container">
+      <h2 class="service__title">
+        Dịch vụ của <span>HUGS agency</span> chúng tôi
+      </h2>
+      <img class="line" src="/src/images/lineBottom.png" />
+      <div class="service__list">
+        <div class="service__list__item">
+          <img
+            src="/src/images/Group2218.png"
+            alt="social media"
+            class="item__img"
+          />
+          <div class="item__content">social media</div>
+        </div>
+        <div class="service__list__item">
+          <img
+            src="/src/images/Group2.png"
+            alt="booking pr"
+            class="item__img"
+          />
+          <div class="item__content">influencer & kols booking pr</div>
+        </div>
+        <div class="service__list__item">
+          <img src="/src/images/Group3.png" alt="event" class="item__img" />
+          <div class="item__content">tổ chức sự kiện</div>
+        </div>
+        <div class="service__list__item">
+          <img
+            src="/src/images/Group4.png"
+            alt="web service"
+            class="item__img"
+          />
+          <div class="item__content">dịch vụ website</div>
+        </div>
       </div>
     </div>
   </div>
-</section>
+</div>
 
-    <main class="main-container">
-      <div class="container">
+  <div id="community" class="row community">
+  <div class="col">
+    <div class="container community__stats">
+      <div class="community__stats__title">
+        <h2 class="title">Cộng đồng và <br />Đối tác của HUGS agency</h2>
+        <img class="line-left" src="/src/images/Rectangle302.png" />
+        <img class="line" src="/src/images/lineBottom.png" />
+      </div>
+      <div class="community__stats__quantities">
+        <div class="quantity">
+          <h1>100</h1>
+          <p>Group cộng đồng</p>
+        </div>
+        <div class="quantity">
+          <h1>20</h1>
+          <p>Đối tác tin cậy</p>
+        </div>
+        <div class="quantity">
+          <h1>6.000.000</h1>
+          <p>Người dùng facebook</p>
+        </div>
+        <div class="quantity">
+          <h1>1000</h1>
+          <p>Influencer & Kols</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="community__menu">
+      <a href="#" class="community__menu__link">
+        <img src="/src/images/VectorCommunity2.png" alt="booking pr" />
+        <div class="link__title">Bóng đá</div>
+      </a>
+      <a href="#" class="community__menu__link">
+        <img src="/src/images/VectorCommunity1.png" alt="icon tin tức" />
+        <div class="link__title">Tin Tức</div>
+      </a>
+      <a href="#" class="community__menu__link">
+        <img src="/src/images/VectorCommunity3.png" alt="booking pr" />
+        <div class="link__title">Giải trí</div>
+      </a>
+      <a href="#" class="community__menu__link">
+        <img src="/src/images/VectorCommunity4.png" alt="booking pr" />
+        <div class="link__title">Xe cộ</div>
+      </a>
+      <a href="#" class="community__menu__link">
+        <img src="/src/images/VectorCommunity5.png" alt="booking pr" />
+        <div class="link__title">Game</div>
+      </a>
+      <a href="#" class="community__menu__link">
+        <img src="/src/images/VectorCommunity6.png" alt="booking pr" />
+        <div class="link__title">Du lịch</div>
+      </a>
+      <a href="#" class="community__menu__link">
+        <img src="/src/images/VectorCommunity7.png" alt="booking pr" />
+        <div class="link__title">Gia đình</div>
+      </a>
+    </div>
+
+    <img class="line" src="/src/images/lineBottom.png" />
+
+    <div class="community__slider">
+      <div class="community__slider__item">
+        <img
+          class="item__img"
+          src="/src/images/football(1).png"
+          alt="image slide"
+        />
+        <p class="item__title">Bóng đá Đà Nẵng</p>
+        <img
+          src="/src/images/lineSlider.png"
+          alt=""
+          class="item__line__title"
+        />
+        <img
+          src="/src/images/shadowSilder.png"
+          class="item__shadow"
+          alt="image shadow"
+        />
+      </div>
+      <div class="community__slider__item">
+        <img
+          class="item__img"
+          src="/src/images/football(2).png"
+          alt="image slide"
+        />
+        <p class="item__title">Bóng đá Đà Nẵng</p>
+        <img
+          src="/src/images/lineSlider.png"
+          alt=""
+          class="item__line__title"
+        />
+        <img
+          src="/src/images/shadowSilder.png"
+          class="item__shadow"
+          alt="image shadow"
+        />
+      </div>
+      <div class="community__slider__item">
+        <img
+          class="item__img"
+          src="/src/images/football(3).png"
+          alt="image slide"
+        />
+        <p class="item__title">Bóng đá Đà Nẵng</p>
+        <img
+          src="/src/images/lineSlider.png"
+          alt=""
+          class="item__line__title"
+        />
+        <img
+          src="/src/images/shadowSilder.png"
+          class="item__shadow"
+          alt="image shadow"
+        />
+      </div>
+      <div class="community__slider__item">
+        <img
+          class="item__img"
+          src="/src/images/football(4).png"
+          alt="image slide"
+        />
+        <p class="item__title">Bóng đá Đà Nẵng</p>
+        <img
+          src="/src/images/lineSlider.png"
+          alt=""
+          class="item__line__title"
+        />
+        <img
+          src="/src/images/shadowSilder.png"
+          class="item__shadow"
+          alt="image shadow"
+        />
+      </div>
+      <div class="community__slider__item">
+        <img
+          class="item__img"
+          src="/src/images/football.png"
+          alt="image slide"
+        />
+        <p class="item__title">Bóng đá Đà Nẵng</p>
+        <img
+          src="/src/images/lineSlider.png"
+          alt=""
+          class="item__line__title"
+        />
+        <img
+          src="/src/images/shadowSilder.png"
+          class="item__shadow"
+          alt="image shadow"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="news" class="row news">
+  <div class="col">
+    <div class="container">
+      <h2 class="news__title">Tin tức HUGS AGENCY</h2>
+      <img class="line" src="/src/images/lineBottom.png" />
+      <div class="news__list">
         <div class="row">
-          <div class="col-md-12">
-            <h4 class="title-block">HTML Boilerplate</h4>
+          <a href="#" class="new col-lg-4">
+            <img
+              src="/src/images/dragon-bridge.png"
+              alt="new image"
+              class="new__img"
+            />
+            <div class="new__title">Cầu Rồng rực rỡ vào cuối chiều</div>
+          </a>
+          <a href="#" class="new col-lg-4">
+            <img
+              src="/src/images/new_img(5).png"
+              alt="new image"
+              class="new__img"
+            />
+            <div class="new__title">
+              Trò cưng của Lampard bất ngờ được Messi khen ngợi hết lời
+            </div>
+          </a>
+          <a href="#" class="new col-lg-4">
+            <img
+              src="/src/images/new_img(4).png"
+              alt="new image"
+              class="new__img"
+            />
+            <div class="new__title">
+              Du lịch Bà Nà để trở về tuổi thơ với những nhân vật hoạt hình
+              Disney
+            </div>
+          </a>
+        </div>
+        <div class="row">
+          <a href="#" class="new col-lg-4">
+            <img
+              src="/src/images/new_img(3).png"
+              alt="new image"
+              class="new__img"
+            />
+            <div class="new__title">
+              Ra mắt xe Bugati Chiron hơn 40 tỷ với 300 mã lực
+            </div>
+          </a>
+          <a href="#" class="new col-lg-4">
+            <img
+              src="/src/images/new_img(2).png"
+              alt="new image"
+              class="new__img"
+            />
+            <div class="new__title">
+              Giải đấu Liên Minh Huyền Thoại được tổ chức tại Đà Nẵng
+            </div>
+          </a>
+          <a href="#" class="new col-lg-4">
+            <img
+              src="/src/images/new_img(1).png"
+              alt="new image"
+              class="new__img"
+            />
+            <div class="new__title">Du lịch Đà Nẵng mùa nắng này</div>
+          </a>
+        </div>
+      </div>
+      <button class="news__read-more">xem thêm</button>
+    </div>
+  </div>
+</div>
+
+  <div class="team">
+  <div class="row">
+    <div class="col-3">
+      <h2 class="team__title">
+        <span class="team__title--normal">Team HUGS</span><br />
+        Chúng tôi là những người đồng đội luôn cùng nhìn về một hướng!
+      </h2>
+    </div>
+
+    <div class="col-9">
+      <img
+        class="member__img"
+        src="/src/images/member(5).png"
+        alt="member image"
+      />
+      <div class="member__info">
+        <p class="info__name">Lê Việt Hưng</p>
+        <p class="info__position">CEO - Nhà sáng lập</p>
+      </div>
+
+      <img
+        class="member__img"
+        src="/src/images/member(7).png"
+        alt="member image"
+      />
+      <div class="member__info">
+        <p class="info__name">Lê Việt Hưng</p>
+        <p class="info__position">CEO - Nhà sáng lập</p>
+      </div>
+
+      <img
+        class="member__img"
+        src="/src/images/member(6).png"
+        alt="member image"
+      />
+      <div class="member__info">
+        <p class="info__name">Lê Việt Hưng</p>
+        <p class="info__position">CEO - Nhà sáng lập</p>
+      </div>
+
+      <img
+        class="member__img"
+        src="/src/images/member(4).png"
+        alt="member image"
+      />
+      <div class="member__info">
+        <p class="info__name">Lê Việt Hưng</p>
+        <p class="info__position">CEO - Nhà sáng lập</p>
+      </div>
+
+      <img
+        class="member__img"
+        src="/src/images/member(3).png"
+        alt="member image"
+      />
+      <div class="member__info">
+        <p class="info__name">Lê Việt Hưng</p>
+        <p class="info__position">CEO - Nhà sáng lập</p>
+      </div>
+
+      <img
+        class="member__img"
+        src="/src/images/member(2).png"
+        alt="member image"
+      />
+      <div class="member__info">
+        <p class="info__name">Lê Việt Hưng</p>
+        <p class="info__position">CEO - Nhà sáng lập</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="members__dots__slider">
+    <img
+      src="/src/images/dots-slider-introduction/dot(1).png"
+      alt="dot slider"
+      class="dot"
+    />
+    <img
+      src="/src/images/dots-slider-introduction/dot(5).png"
+      alt="dot slider"
+      class="dot"
+    />
+    <img
+      src="/src/images/dots-slider-introduction/dot(2).png"
+      alt="dot slider"
+      class="dot"
+    />
+    <img
+      src="/src/images/dots-slider-introduction/dot(3).png"
+      alt="dot slider"
+      class="dot"
+    />
+    <img
+      src="/src/images/dots-slider-introduction/dot(4).png"
+      alt="dot slider"
+      class="dot"
+    />
+  </div>
+</div>
+
+  <div id="customer" class="row customer">
+  <div class="container">
+    <h2 class="col customer__title">Khách hàng của HUGS agency</h2>
+    <img class="line" src="/src/images/lineBottom.png" />
+    <div class="customer__list">
+      <div class="item">
+        <img
+          src="/src/images/customer(5).png"
+          alt="social media"
+          class="item__logo"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="/src/images/customer(4).png"
+          alt="booking pr"
+          class="item__logo"
+        />
+      </div>
+      <div class="item">
+        <img src="/src/images/customer(3).png" alt="event" class="item__logo" />
+      </div>
+      <div class="item">
+        <img
+          src="/src/images/customer(2).png"
+          alt="web service"
+          class="item__logo"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="/src/images/customer(1).png"
+          alt="web service"
+          class="item__logo"
+        />
+      </div>
+    </div>
+    <h2 class="customer__title">Đối tác <span class="other">khác</span></h2>
+    <img class="line" src="/src/images/lineBottom.png" />
+    <div class="customer__list customer__other">
+      <div class="item">
+        <img
+          src="/src/images/otherCustomer(1).png"
+          alt="social media"
+          class="item__logo"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="/src/images/otherCustomer(5).png"
+          alt="booking pr"
+          class="item__logo"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="/src/images/otherCustomer(4).png"
+          alt="event"
+          class="item__logo"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="/src/images/otherCustomer(3).png"
+          alt="web service"
+          class="item__logo"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="/src/images/otherCustomer(2).png"
+          alt="web service"
+          class="item__logo"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="contact" class="row contact">
+  <div class="container">
+    <h2 class="contact__title">Liên hệ với chúng tôi</h2>
+    <img class="line" src="/src/images/lineBottom.png" />
+    <div class="row">
+      <div class="contact__list col-md-5">
+        <div class="item">
+          <div class="item__icon">
+            <img
+              class="item__icon--img"
+              src="/src/images/contact_icon(1).png"
+              alt="icon local"
+            />
+          </div>
+          <div class="item__text">
+            <div class="item__text--title">Địa chỉ</div>
+            <div class="item__text--desc address">
+              55 Lý Thường Kiệt, Hải Châu, TP Đà Nẵng
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__icon">
+            <img
+              class="item__icon--img"
+              src="/src/images/contact_icon(4).png"
+              alt="icon mail"
+            />
+          </div>
+          <div class="item__text">
+            <div class="item__text--title">Email</div>
+            <a href="#" class="item__text--desc">lienhe@hugs.agency</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__icon">
+            <img
+              class="item__icon--img"
+              src="/src/images/contact_icon(3).png"
+              alt="icon phone"
+            />
+          </div>
+          <div class="item__text">
+            <div class="item__text--title">Số điện thoại</div>
+            <a href="#" class="item__text--desc">0924.392.222</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item__icon">
+            <img
+              class="item__icon--img"
+              src="/src/images/contact_icon(2).png"
+              alt="icon facebook"
+            />
+          </div>
+          <div class="item__text">
+            <div class="item__text--title">Fanpage</div>
+            <a href="#" class="item__text--desc">www.fb.com/hugs.agency/</a>
           </div>
         </div>
       </div>
-    </main>
-
-    <!-- include footer.html -->
-    <footer class="footer-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Footer Container</p>
+      <div class="contact__form col-md-7">
+        <p class="form__label">Họ tên</p>
+        <div class="form__input mb-5">
+          <input
+            type="text"
+            class="form-control"
+            id="input-fullname"
+            placeholder="Nhập họ tên"
+          />
+        </div>
+        <div class="row">
+          <p class="form__label">Số điện thoại</p>
+          <div class="form__input mb-5 col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="input-phone"
+              placeholder="Nhập số điện thoại"
+            />
+          </div>
+          <p class="form__label">Email</p>
+          <div class="form__input mb-5 col-md-6">
+            <input
+              type="email"
+              class="form-control"
+              id="input-email"
+              placeholder="Nhập địa chỉ email"
+            />
+          </div>
+        </div>
+        <p class="form__label">Nội dung</p>
+        <div class="form__input mb-5">
+          <textarea
+            class="form-control text-area"
+            id="input-content"
+            rows="3"
+            placeholder="Nhập nội dung"
+          ></textarea>
+        </div>
+        <button class="form__btn">Nhận tư vấn</button>
       </div>
+    </div>
+    <div class="contact__vector">
+      <img class="first-img" src="/src/images/Group2187.png" alt="vector" />
+      <img class="last-img" src="/src/images/GroupContact.png" alt="vector" />
+    </div>
+  </div>
+</div>
+
+</main>
+
+
+      <!-- include footer.html -->
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__logo">
+      <img
+        class="footer__logo--img"
+        src="/src/images/logoFooter.png"
+        alt="logo footer"
+      />
+    </div>
+    <h2 class="footer__title">Subscribe to our newsletter</h2>
+    <p class="footer__description">
+      Hãy để lại email để nhận các thông tin mới nhất từ chúng tôi!
+    </p>
+    <div class="footer__subscribe">
+      <input
+        class="footer__subscribe--input"
+        type="email"
+        placeholder="Nhập email"
+      />
+      <button class="footer__subscribe--btn">Subscribe</button>
+    </div>
+    <div class="footer__follow-us">
+      <p class="follow-us__title">Theo dõi chúng tôi</p>
+      <div class="follow-us__icons">
+        <a class="icon">
+          <img
+            class="icon__img"
+            src="/src/images/iconFooter(5).png"
+            alt="icon facebook"
+          />
+        </a>
+        <a class="icon">
+          <img
+            class="icon__img"
+            src="/src/images/iconFooter(9).png"
+            alt="icon tiktok"
+          />
+        </a>
+        <a class="icon">
+          <img
+            class="icon__img"
+            src="/src/images/iconFooter(8).png"
+            alt="icon instagram"
+          />
+        </a>
+        <a class="icon">
+          <img
+            class="icon__img"
+            src="/src/images/iconFooter(7).png"
+            alt="icon zalo"
+          />
+        </a>
+        <a class="icon">
+          <img
+            class="icon__img"
+            src="/src/images/iconFooter(6).png"
+            alt="icon skype"
+          />
+        </a>
+      </div>
+    </div>
+    <img src="/src/images/lineFooter.png" class="footer__line" />
+    <div class="footer__copy-right">
+      <p class="footer__copy-right--text">
+        Copyright © 2021 bởi Hugs Agency.<span class="footer__copy-right--img"
+          ><img
+            src="/src/images/logoProtect.png"
+            alt="logo protect"
+            class="footer__logo-protect"
+        /></span>
+      </p>
+    </div>
+    <div class="footer__img">
+      <img src="/src/images/imgFooter(2).png" alt="image footer" />
+    </div>
+    <div class="footer__vectors">
+      <img
+        class="vector"
+        src="/src/images/vectorFooter(1).png"
+        alt="vector background footer"
+      />
+      <img
+        class="vector"
+        src="/src/images/vectorFooter(2).png"
+        alt="vector background footer"
+      />
+      <img
+        class="vector"
+        src="/src/images/vectorFooter(3).png"
+        alt="vector background footer"
+      />
     </div>
   </div>
 </footer>
-  </div>
 
-  <!-- include scripts.html -->
-  <!-- build:js script/script.min.js -->
-<script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
-<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-<script type="text/javascript" src="scripts/script.js"></script>
+    </div>
+
+    <!-- include scripts.html -->
+    <!-- build:js script/script.min.js -->
+<script
+  type="text/javascript"
+  src="../node_modules/jquery/dist/jquery.js"
+></script>
+<script
+  type="text/javascript"
+  src="../node_modules/bootstrap/dist/js/bootstrap.js"
+></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+></script>
+
+<script type="text/javascript" src="/src/scripts/script.js"></script>
 <!-- endbuild -->
 
-</body>
+  </body>
 </html>
