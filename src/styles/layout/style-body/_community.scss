@@ -47,7 +47,7 @@
     display: flex;
     justify-content: space-around;
     margin: 64px auto 36px;
-    width: 80%;
+    width: 90%;
 
     .community__menu__link {
       display: flex;
@@ -158,5 +158,108 @@
     border: none;
     color: #fff;
     background-color: transparent;
+  }
+}
+
+@media (max-width: 838px) {
+  .community {
+    .community__menu {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 753) {
+}
+
+@media (max-width: 415px) {
+  .community {
+    .community__stats {
+      flex-direction: column;
+      text-align: center;
+
+      .community__stats__title {
+        .title {
+          width: 310px;
+          font-size: 22px;
+          line-height: 32px;
+          margin: 30px auto 0;
+        }
+
+        .line-left {
+          display: none;
+        }
+
+        .line {
+          display: block;
+          margin: 15px auto 0;
+          width: 290px;
+          height: 2px;
+        }
+      }
+
+      .community__stats__quantities {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        row-gap: 20px;
+      }
+    }
+
+    .community__menu {
+      margin-top: 60px;
+      margin-bottom: 0;
+      width: 100vh;
+      margin-left: 44px;
+
+      .community__menu__link {
+        width: 200px;
+        padding: 0 15px;
+
+        .menu__link--img {
+          &:first-child {
+            margin-right: 5px;
+          }
+        }
+
+        .link__title {
+          width: 70px;
+        }
+      }
+    }
+
+    .line {
+      display: block;
+      width: 105px;
+      height: 2px;
+      margin: 16px 0 25px 52px;
+    }
+
+    .community__slider {
+      margin-bottom: 0;
+
+      .slick-list {
+        .community__slider__item {
+          overflow: hidden;
+
+          .item__img {
+            width: 440px;
+            height: 223px;
+            margin: 0;
+          }
+          .item__title {
+            bottom: 44px;
+          }
+          .item__line__title {
+            display: none;
+          }
+          .item__shadow {
+            bottom: -2px;
+            width: 451px;
+            left: 0px;
+          }
+        }
+      }
+    }
   }
 }

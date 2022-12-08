@@ -6,6 +6,7 @@
     .new__img {
       display: block;
       width: 100%;
+      border-radius: 12px;
     }
 
     .new__title {
@@ -13,7 +14,7 @@
       font-size: 20px;
       line-height: 28px;
       color: #262626;
-      margin: 12px 0;
+      margin: 12px 0 24px;
     }
   }
 
@@ -27,5 +28,39 @@
     color: #00405c;
     background: linear-gradient(to right, rgb(92, 187, 229), rgb(238, 164, 201));
     margin: 30px auto 80px;
+  }
+}
+
+@media (max-width: 765px) {
+  .news {
+    .news__title {
+      margin-top: 42px;
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .news {
+    .news__title {
+      margin-top: 30px;
+      font-size: 22px;
+      line-height: 36px;
+    }
+
+    .line {
+      width: 290px;
+      height: 2px;
+      margin: 15px auto 30px;
+    }
+
+    .news__list {
+      .new__title {
+        margin: 16px 0 30px;
+      }
+    }
+
+    .news__read-more {
+      margin: 0 auto 39px;
+    }
   }
 }
