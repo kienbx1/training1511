@@ -71,7 +71,7 @@
       font-size: 14px;
       line-height: 24px;
       color: white;
-      overflow: hidden;
+      overflow: auto;
       max-height: 250px;
       margin: 2%;
     }
@@ -96,6 +96,7 @@
       line-height: 46px;
       &:last-child {
         max-width: 400px;
+        width: 100%;
       }
     }
     .services-group {

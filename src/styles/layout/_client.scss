@@ -12,8 +12,10 @@
   }
   .client-line {
     max-width: 400px;
+    width: 100%;
   }
   .client-logos {
+    align-items: center;
     padding-bottom: 50px;
     margin-top: 30px;
     max-width: 100%;
