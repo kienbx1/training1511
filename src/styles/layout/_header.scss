@@ -42,3 +42,70 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .header {
+    .header__content {
+      max-width: 880px;
+
+      .header__content__nav {
+        flex-wrap: nowrap;
+
+        .nav__list-links {
+          .nav-link {
+            padding: 4px 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .header {
+    .header__content {
+      .header__content__nav {
+        display: none;
+      }
+
+      .nav--responsive {
+        display: flex;
+        align-items: center;
+        padding: 32px 32px;
+        justify-content: space-between;
+
+        .nav__logo {
+          width: 50px;
+          height: 50px;
+
+          .logo__img {
+            width: 100%;
+          }
+        }
+
+        .nav__menu-btn {
+          .menu-btn__img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .header {
+    .header__content {
+      .header__content__nav {
+        display: none;
+      }
+
+      .nav--responsive {
+        display: flex;
+        align-items: center;
+        padding: 16px 10px;
+        justify-content: space-between;
+      }
+    }
+  }
+}

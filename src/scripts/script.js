@@ -32,3 +32,23 @@ $(".introduction__slider").slick({
     },
   ],
 });
+
+$(".introduction--mobile").slick({
+  dots: true,
+  infinite: true,
+  nextArrow: false,
+  prevArrow: false,
+  customPaging: function (slider, i) {
+    return '<a class="dot--introduction" /> ';
+  },
+});
+
+$(".list__member--mobile").slick({
+  dots: true,
+  infinite: true,
+  nextArrow: false,
+  prevArrow: false,
+  customPaging: function (slider, i) {
+    return '<a class="dot--team" /> ';
+  },
+});

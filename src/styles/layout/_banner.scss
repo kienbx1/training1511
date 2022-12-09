@@ -73,3 +73,97 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .banner {
+    height: auto;
+  }
+}
+
+@media (max-width: 905px) {
+  .banner {
+    .banner__content {
+      .banner__content__text {
+        .text__title {
+          font-size: 32px;
+        }
+
+        .text__subtitle {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 724px) {
+  .banner {
+    .banner__content {
+      .banner__content__text {
+        width: 100%;
+        .text__title {
+          font-size: 26px;
+        }
+
+        .text__subtitle {
+          font-size: 14px;
+        }
+      }
+
+      .banner__content__img {
+        margin: 188px auto 0;
+        width: 916px;
+        height: 320px;
+        overflow-x: hidden;
+        object-fit: cover;
+      }
+    }
+
+    .banner__contacts {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .banner {
+    height: 100%;
+
+    .banner__content {
+      .banner__content__text {
+        width: 100%;
+
+        .text__title {
+          font-size: 26px;
+          line-height: 42px;
+          top: 95px;
+        }
+
+        .text__subtitle {
+          font-size: 14px;
+          line-height: 30px;
+          width: 100%;
+          top: 150px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .banner__content__img {
+        margin: 188px auto 0;
+        width: 916px;
+        height: 320px;
+        overflow-x: hidden;
+        object-fit: cover;
+      }
+
+      .banner__content__vector {
+        display: none;
+      }
+    }
+
+    .banner__contacts {
+      display: none;
+    }
+  }
+}
