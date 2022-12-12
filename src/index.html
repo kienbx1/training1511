@@ -21,9 +21,16 @@
 <!-- Google Font -->
     <!-- include styles.html -->
     <!-- build:css(.tmp) style/style.min.css -->
-<link rel="stylesheet" type="text/css" media="screen" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+<link
+  rel="stylesheet"
+  type="text/css"
+  media="screen"
+  href="../node_modules/bootstrap/dist/css/bootstrap.css"
+/>
 <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+<link rel="stylesheet" href="/src/animate-wow/animate.css" />
 <!-- endbuild -->
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -43,8 +50,12 @@
       <header class="header">
   <div class="container header__content">
     <div class="nav header__content__nav">
-      <img class="nav__logo" src="../../images/Group.png" />
-      <ul class="nav__list-links">
+      <img
+        class="wow bounceInLeft nav__logo"
+        data-wow-duration="1s"
+        src="../../images/Group.png"
+      />
+      <ul class="wow bounceInRight nav__list-links" data-wow-duration="1s">
         <li><a href="#" class="nav-link">trang chủ</a></li>
         <li><a href="#introduction" class="nav-link">giới thiệu</a></li>
         <li><a href="#service" class="nav-link">dịch vụ</a></li>
@@ -80,7 +91,7 @@
       <!-- include banner.html -->
       <section class="banner">
   <div class="banner__content">
-    <div class="banner__content__text">
+    <div class="wow banner__content__text">
       <h1 class="text__title">hugs agency</h1>
       <p class="text__subtitle">Kết nối thương hiệu với người dùng mạng</p>
     </div>
@@ -97,27 +108,39 @@
   </div>
 
   <ul class="banner__contacts">
-    <li class="banner__contacts__link">
+    <li class="wow bounceInDown banner__contacts__link" data-wow-duration="1s">
       <a class="link" href=""
         ><img class="link__img" src="/src/images/VectorSun.png"
       /></a>
     </li>
-    <li class="banner__contacts__link">
+    <li
+      class="wow bounceInDown banner__contacts__link"
+      data-wow-duration="1.8s"
+    >
       <a class="link" href=""
         ><img class="link__img" src="/src/images/path.png"
       /></a>
     </li>
-    <li class="banner__contacts__link">
+    <li
+      class="wow bounceInDown banner__contacts__link"
+      data-wow-duration="1.6s"
+    >
       <a class="link" href=""
         ><img class="link__img" src="/src/images/VectorZalo.png"
       /></a>
     </li>
-    <li class="banner__contacts__link">
+    <li
+      class="wow bounceInDown banner__contacts__link"
+      data-wow-duration="1.4s"
+    >
       <a class="link" href=""
         ><img class="link__img" src="/src/images/VectorSkype.png"
       /></a>
     </li>
-    <li class="banner__contacts__link">
+    <li
+      class="wow bounceInDown banner__contacts__link"
+      data-wow-duration="1.2s"
+    >
       <a class="link" href=""
         ><img class="link__img" src="/src/images/VectorPhone.png"
       /></a>
@@ -127,18 +150,37 @@
  <main class="main-container">
   <div id="introduction" class="row introduction">
   <div class="container">
-    <h2 class="introduction__title">HUGS Agency chúng tôi làm gì?</h2>
-    <img class="line" src="/src/images/lineBottom.png" />
+    <h2
+      class="wow bounceInLeft introduction__title"
+      data-wow-duration="1.5s"
+      data-wow-offset="200"
+    >
+      HUGS Agency chúng tôi làm gì?
+    </h2>
+    <img
+      class="wow bounceInLeft line"
+      src="/src/images/lineBottom.png"
+      data-wow-duration="1.5s"
+      data-wow-offset="200"
+    />
 
     <div class="introduction--desktop">
-      <div class="introduction__slider">
+      <div
+        class="introduction__slider wow bounceInRight"
+        data-wow-duration="1.5s"
+        data-wow-offset="200"
+      >
         <div class="slider__item">
           <img
             class="item__img"
             src="/src/images/f1.png"
             alt="image introduction"
           />
-          <div class="item__descs">
+          <div
+            class="item__descs wow bounceInUp"
+            data-wow-duration="1.5s"
+            data-wow-offset="100"
+          >
             <p class="desc">
               Hugs Agency là tập hợp những freelance đầy tài năng có nhiều năm
               kinh nghiệm trong lĩnh vực của mình với nhiều thành tích nổi bật.
@@ -345,15 +387,28 @@
   <div id="service" class="row service">
   <div class="col">
     <div class="container">
-      <h2 class="service__title">
+      <h2
+        class="wow bounceInRight service__title"
+        data-wow-duration="1.5s"
+        data-wow-offset="250"
+      >
         Dịch vụ của
         <span class="service__title--uppercase">HUGS agency</span> chúng tôi
       </h2>
 
-      <img class="line" src="/src/images/lineBottom.png" />
+      <img
+        class="wow bounceInRight line"
+        src="/src/images/lineBottom.png"
+        data-wow-duration="1.5s"
+        data-wow-offset="250"
+      />
 
       <div class="row service__list">
-        <div class="col-md-3 service__list__item">
+        <div
+          class="wow bounceInLeft col-md-3 service__list__item"
+          data-wow-duration="1.5s"
+          data-wow-offset="250"
+        >
           <img
             src="/src/images/Group2218.png"
             alt="social media"
@@ -361,7 +416,11 @@
           />
           <div class="item__content">social media</div>
         </div>
-        <div class="col-md-3 service__list__item">
+        <div
+          class="wow bounceInUp col-md-3 service__list__item"
+          data-wow-duration="1.5s"
+          data-wow-offset="250"
+        >
           <img
             src="/src/images/Group2.png"
             alt="booking pr"
@@ -369,11 +428,19 @@
           />
           <div class="item__content">influencer & kols booking pr</div>
         </div>
-        <div class="col-md-3 service__list__item">
+        <div
+          class="wow bounceInDown col-md-3 service__list__item"
+          data-wow-duration="1.5s"
+          data-wow-offset="250"
+        >
           <img src="/src/images/Group3.png" alt="event" class="item__img" />
           <div class="item__content">tổ chức sự kiện</div>
         </div>
-        <div class="col-md-3 service__list__item">
+        <div
+          class="wow bounceInRight col-md-3 service__list__item"
+          data-wow-duration="1.5s"
+          data-wow-offset="250"
+        >
           <img
             src="/src/images/Group4.png"
             alt="web service"
@@ -389,12 +456,20 @@
   <div id="community" class="row community">
   <div class="col">
     <div class="container community__stats">
-      <div class="community__stats__title">
+      <div
+        class="wow bounceInRight community__stats__title"
+        data-wow-duration="1.5s"
+        data-wow-offset="250"
+      >
         <h2 class="title">Cộng đồng và <br />Đối tác của HUGS agency</h2>
         <img class="line-left" src="/src/images/Rectangle302.png" />
         <img class="line" src="/src/images/lineBottom.png" />
       </div>
-      <div class="community__stats__quantities">
+      <div
+        class="wow bounceInLeft community__stats__quantities"
+        data-wow-duration="1.5s"
+        data-wow-offset="250"
+      >
         <div class="quantity">
           <h1>100</h1>
           <p>Group cộng đồng</p>
@@ -414,7 +489,11 @@
       </div>
     </div>
 
-    <div class="community__menu">
+    <div
+      class="wow bounceInLeft community__menu"
+      data-wow-duration="1.5s"
+      data-wow-offset="250"
+    >
       <a href="#" class="community__menu__link">
         <img
           class="menu__link--img"
@@ -475,7 +554,11 @@
 
     <img class="line" src="/src/images/lineBottom.png" />
 
-    <div class="community__slider">
+    <div
+      class="wow fadeIn community__slider"
+      data-wow-duration="1.5s"
+      data-wow-offset="250"
+    >
       <div class="community__slider__item">
         <img
           class="item__img"
@@ -573,11 +656,22 @@
   <div id="news" class="row news">
   <div class="col">
     <div class="container">
-      <h2 class="news__title">Tin tức HUGS AGENCY</h2>
+      <h2
+        class="wow bounceInDown news__title"
+        data-wow-duration="1.5s"
+        data-wow-offset="100"
+      >
+        Tin tức HUGS AGENCY
+      </h2>
 
-      <img class="line" src="/src/images/lineBottom.png" />
+      <img
+        class="wow bounceInDown line"
+        src="/src/images/lineBottom.png"
+        data-wow-duration="1.5s"
+        data-wow-offset="100"
+      />
 
-      <div class="news__list">
+      <div class="wow bounceInUp news__list" data-wow-offset="100">
         <div class="row">
           <a href="#" class="new col-md-4">
             <img
@@ -640,7 +734,9 @@
           </a>
         </div>
       </div>
-      <button class="news__read-more">xem thêm</button>
+      <button class="wow bounceInUp news__read-more" data-wow-duration="1.5s">
+        xem thêm
+      </button>
     </div>
   </div>
 </div>
@@ -649,7 +745,11 @@
   <div class="list--desktop">
     <div class="row">
       <div class="col-xl-3">
-        <h2 class="team__title">
+        <h2
+          class="wow bounceInLeft team__title"
+          data-wow-duration="1.5s"
+          data-wow-offset="200"
+        >
           Team HUGS<br />
           <span class="team__title--bold"
             >Chúng tôi là những người đồng đội luôn cùng nhìn về một
@@ -662,34 +762,46 @@
         <div class="row list__member--desktop">
           <div class="row list__member">
             <img
-              class="col-lg-4 col-md-4 col-sm-4 member__img"
+              class="col-lg-4 col-md-4 col-sm-4 member__img wow bounceInRight"
+              data-wow-duration="1s"
+              data-wow-offset="200"
               src="/src/images/member(5).png"
               alt="member image"
             />
             <img
-              class="col-lg-4 col-md-4 col-sm-4 member__img"
+              class="col-lg-4 col-md-4 col-sm-4 member__img wow bounceInRight"
+              data-wow-duration="1.2s"
+              data-wow-offset="200"
               src="/src/images/member(7).png"
               alt="member image"
             />
             <img
-              class="col-lg-3 col-md-3 col-sm-3 member__img"
+              class="col-lg-3 col-md-3 col-sm-3 member__img wow bounceInRight"
+              data-wow-duration="1.4s"
+              data-wow-offset="200"
               src="/src/images/member(6).png"
               alt="member image"
             />
           </div>
           <div class="row list__member">
             <img
-              class="col-lg-3 col-md-3 col-sm-3 member__img"
+              class="col-lg-3 col-md-3 col-sm-3 member__img wow bounceInRight"
+              data-wow-duration="1.6s"
+              data-wow-offset="200"
               src="/src/images/member(4).png"
               alt="member image"
             />
             <img
-              class="col-lg-4 col-md-4 col-sm-4 member__img"
+              class="col-lg-4 col-md-4 col-sm-4 member__img wow bounceInRight"
+              data-wow-duration="1.8s"
+              data-wow-offset="200"
               src="/src/images/member(3).png"
               alt="member image"
             />
             <img
-              class="col-lg-3 col-md-3 col-sm-3 member__img"
+              class="col-lg-3 col-md-3 col-sm-3 member__img wow bounceInRight"
+              data-wow-duration="2s"
+              data-wow-offset="200"
               src="/src/images/member(2).png"
               alt="member image"
             />
@@ -758,11 +870,26 @@
 
   <div id="customer" class="row customer">
   <div class="container">
-    <h2 class="col customer__title">Khách hàng của HUGS agency</h2>
+    <h2
+      class="col customer__title wow bounceInLeft"
+      data-wow-duration="1.5s"
+      data-wow-offset="200"
+    >
+      Khách hàng của HUGS agency
+    </h2>
 
-    <img class="line" src="/src/images/lineBottom.png" />
+    <img
+      class="line wow bounceInLeft"
+      src="/src/images/lineBottom.png"
+      data-wow-duration="1.5s"
+      data-wow-offset="200"
+    />
 
-    <div class="customer__list">
+    <div
+      class="wow bounceInRight customer__list"
+      data-wow-duration="1.5s"
+      data-wow-offset="200"
+    >
       <div class="item">
         <img
           src="/src/images/customer(5).png"
@@ -796,11 +923,26 @@
       </div>
     </div>
 
-    <h2 class="customer__title">Đối tác <span class="other">khác</span></h2>
+    <h2
+      class="customer__title wow bounceInLeft"
+      data-wow-duration="1.5s"
+      data-wow-offset="100"
+    >
+      Đối tác <span class="other">khác</span>
+    </h2>
 
-    <img class="line" src="/src/images/lineBottom.png" />
+    <img
+      class="line wow bounceInLeft"
+      src="/src/images/lineBottom.png"
+      data-wow-duration="1.5s"
+      data-wow-offset="100"
+    />
 
-    <div class="customer__list customer__other">
+    <div
+      class="wow bounceInRight customer__list customer__other"
+      data-wow-duration="1.5s"
+      data-wow-offset="100"
+    >
       <div class="item">
         <img
           src="/src/images/otherCustomer(1).png"
@@ -842,13 +984,28 @@
 
   <div id="contact" class="row contact">
   <div class="container">
-    <h2 class="contact__title">Liên hệ với chúng tôi</h2>
+    <h2
+      class="wow bounceInRight contact__title"
+      data-wow-duration="1.5s"
+      data-wow-offset="200"
+    >
+      Liên hệ với chúng tôi
+    </h2>
 
-    <img class="line" src="/src/images/lineBottom.png" />
+    <img
+      class="wow bounceInRight line"
+      src="/src/images/lineBottom.png"
+      data-wow-duration="1.5s"
+      data-wow-offset="200"
+    />
 
     <div class="row">
       <div class="contact__list col-md-5">
-        <div class="item">
+        <div
+          class="item wow bounceInLeft"
+          data-wow-duration="1.8s"
+          data-wow-offset="50"
+        >
           <div class="item__icon">
             <img
               class="item__icon--img"
@@ -863,7 +1020,11 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        <div
+          class="item wow bounceInLeft"
+          data-wow-duration="1.6s"
+          data-wow-offset="50"
+        >
           <div class="item__icon">
             <img
               class="item__icon--img"
@@ -876,7 +1037,11 @@
             <a href="#" class="item__text--desc">lienhe@hugs.agency</a>
           </div>
         </div>
-        <div class="item">
+        <div
+          class="item wow bounceInLeft"
+          data-wow-duration="1.4s"
+          data-wow-offset="50"
+        >
           <div class="item__icon">
             <img
               class="item__icon--img"
@@ -889,7 +1054,11 @@
             <a href="#" class="item__text--desc">0924.392.222</a>
           </div>
         </div>
-        <div class="item">
+        <div
+          class="item wow bounceInLeft"
+          data-wow-duration="1.2s"
+          data-wow-offset="20"
+        >
           <div class="item__icon">
             <img
               class="item__icon--img"
@@ -906,7 +1075,11 @@
 
       <div class="contact__form col-md-7">
         <p class="form__label">Họ tên</p>
-        <div class="form__input mb-5">
+        <div
+          class="form__input mb-5 wow bounceInRight"
+          data-wow-duration="1.8s"
+          data-wow-offset="50"
+        >
           <input
             type="text"
             class="form-control"
@@ -916,7 +1089,11 @@
         </div>
         <div class="row">
           <p class="form__label">Số điện thoại</p>
-          <div class="form__input mb-5 col-md-6">
+          <div
+            class="form__input mb-5 wow bounceInRight col-md-6"
+            data-wow-duration="1.6s"
+            data-wow-offset="50"
+          >
             <input
               type="text"
               class="form-control"
@@ -925,7 +1102,11 @@
             />
           </div>
           <p class="form__label">Email</p>
-          <div class="form__input mb-5 col-md-6">
+          <div
+            class="form__input mb-5 wow bounceInRight col-md-6"
+            data-wow-duration="1.6s"
+            data-wow-offset="50"
+          >
             <input
               type="email"
               class="form-control"
@@ -935,7 +1116,11 @@
           </div>
         </div>
         <p class="form__label">Nội dung</p>
-        <div class="form__input mb-5">
+        <div
+          class="form__input mb-5 wow bounceInRight"
+          data-wow-duration="1.4s"
+          data-wow-offset="50"
+        >
           <textarea
             class="form-control text-area"
             id="input-content"
@@ -943,7 +1128,13 @@
             placeholder="Nhập nội dung"
           ></textarea>
         </div>
-        <button class="form__btn">Nhận tư vấn</button>
+        <button
+          class="form__btn wow bounceInRight"
+          data-wow-duration="1.2s"
+          data-wow-offset="50"
+        >
+          Nhận tư vấn
+        </button>
       </div>
     </div>
 
@@ -962,18 +1153,36 @@
   <div class="container">
     <div class="row footer__content">
       <div class="col-lg-7 col-md-7 component-text">
-        <div class="footer__logo">
+        <div
+          class="wow bounceInDown footer__logo"
+          data-wow-duration="1.4s"
+          data-wow-offset="50"
+        >
           <img
             class="footer__logo--img"
             src="/src/images/logoFooter.png"
             alt="logo footer"
           />
         </div>
-        <h2 class="footer__title">Subscribe to our newsletter</h2>
-        <p class="footer__description">
+        <h2
+          class="footer__title wow bounceInLeft"
+          data-wow-duration="1.5s"
+          data-wow-offset="50"
+        >
+          Subscribe to our newsletter
+        </h2>
+        <p
+          class="footer__description wow bounceInLeft"
+          data-wow-duration="1.5s"
+          data-wow-offset="50"
+        >
           Hãy để lại email để nhận các thông tin mới nhất từ chúng tôi!
         </p>
-        <div class="footer__subscribe">
+        <div
+          class="footer__subscribe wow bounceInLeft"
+          data-wow-duration="1.5s"
+          data-wow-offset="50"
+        >
           <input
             class="footer__subscribe--input"
             type="email"
@@ -981,7 +1190,11 @@
           />
           <button class="footer__subscribe--btn">Subscribe</button>
         </div>
-        <div class="footer__follow-us">
+        <div
+          class="footer__follow-us wow bounceInLeft"
+          data-wow-duration="1.5s"
+          data-wow-offset="20"
+        >
           <p class="follow-us__title">Theo dõi chúng tôi</p>
           <div class="follow-us__icons">
             <a class="icon">
@@ -1023,14 +1236,18 @@
         </div>
       </div>
 
-      <div class="col-lg-5 col-md-5 component-img">
+      <div
+        class="col-lg-5 col-md-5 component-img wow bounceInRight"
+        data-wow-duration="1.5s"
+        data-wow-offset="20"
+      >
         <div class="footer__img">
           <img src="/src/images/imgFooter(2).png" alt="image footer" />
         </div>
       </div>
     </div>
 
-    <div class="footer__copy-right">
+    <div class="footer__copy-right wow bounceInUp" data-wow-duration="1.5s">
       <p class="footer__copy-right--text">
         Copyright © 2021 bởi Hugs Agency.<span class="footer__copy-right--img"
           ><img
@@ -1085,6 +1302,13 @@
 ></script>
 
 <script type="text/javascript" src="/src/scripts/script.js"></script>
+
+<script src="/src/animate-wow/wow.min.js"></script>
+<script>
+  new WOW({
+    boxClass: "wow",
+  }).init();
+</script>
 <!-- endbuild -->
 
   </body>
