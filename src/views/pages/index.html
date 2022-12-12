@@ -5,7 +5,7 @@
     @@include('../layouts/head.html', { "title": "HTML Boilerplate" })
     <!-- include styles.html -->
     @@include('../layouts/styles.html')
-
+    <link rel="stylesheet" href="../../scripts/animate.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -30,6 +30,10 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="../../scripts/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <div class="wrapper">
       <!-- include header.html -->
       @@include('../layouts/header.html')

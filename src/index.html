@@ -36,7 +36,7 @@
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 <!-- endbuild -->
 
-
+    <link rel="stylesheet" href="../../scripts/animate.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -61,15 +61,19 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="../../scripts/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <div class="wrapper">
       <!-- include header.html -->
       <header class="header-container">
   <div class="container">
-    <div class="header-logo">
+    <div class="header-logo wow rotateIn">
       <img src="../../images/logo.png" alt="logo" />
     </div>
     <div>
-      <ul class="header-list">
+      <ul class="header-list wow bounceInUp">
         <li class="header-list__item">Trang chủ</li>
         <li class="header-list__item">Giới thiệu</li>
         <li class="header-list__item">Dịch vụ</li>
@@ -78,14 +82,16 @@
         <li class="header-list__item">Khách hàng</li>
         <li class="header-list__item contact">Liên hệ</li>
       </ul>
-      <div class="header-menu"><img src="../../images/menu.png" alt="" /></div>
+      <div class="header-menu wow bounceInUp">
+        <img src="../../images/menu.png" alt="menu" />
+      </div>
     </div>
   </div>
 </header>
 
       <!-- include banner.html -->
       <div class="banner-container">
-  <div class="banner-container">
+  <div class="banner-container wow bounceInDown">
     <span class="banner-title">HUGS AGENCY</span>
     <span class="banner-sub"> Kết nối thương hiệu với người dùng mạng</span>
   </div>
@@ -93,7 +99,7 @@
     <img
       src="../../images/Rectangle296.png"
       alt="banner img"
-      class="banner-img"
+      class="banner-img wow bounce"
     />
   </div>
 </div>
@@ -101,7 +107,7 @@
       <!-- include body.html -->
       <div class="body-container">
   <div class="agency-container">
-    <div class="container-title">
+    <div class="container-title wow flipInX">
       <center>
         <p class="body-title">HUGS Agency</p>
         <p class="body-title">Chúng tôi làm gì ?</p>
@@ -115,11 +121,11 @@
     <div class="hugs_slide">
       <div class="slide-item">
         <img
-          class="body-img__Hugs"
+          class="body-img__Hugs wow fadeInLeftBig"
           src="../../images/peopleHugs.png"
           alt="freelancer hugs"
         />
-        <div class="body-content">
+        <div class="body-content wow fadeInRightBig">
           <div class="body-content__text">
             <p>
               Hugs Agency là tập hợp những freelance đầy tài năng có nhiều năm
@@ -249,7 +255,7 @@
   </div>
   <div class="body-services">
     <center>
-      <div class="services-title">
+      <div class="services-title wow flipInX">
         <p class="">Dịch vụ của HUGS AGENCY chúng tôi</p>
         <img
           class="services-title"
@@ -261,7 +267,7 @@
     <div class="services-group">
       <div class="services-img">
         <img
-          class="services-img"
+          class="services-img wow fadeInLeftBig"
           src="../../images/socialMedia.png"
           alt="social media"
         />
@@ -271,7 +277,7 @@
       </div>
       <div class="services-img">
         <img
-          class="services-img"
+          class="services-img wow fadeInDownBig"
           src="../../images/bookingPr.png"
           alt="booking pr "
         />
@@ -281,7 +287,7 @@
       </div>
       <div class="services-img">
         <img
-          class="services-img"
+          class="services-img wow fadeInUpBig"
           src="../../images/toChucSukien.png"
           alt="toChucSukien"
         />
@@ -291,7 +297,7 @@
       </div>
       <div class="services-img">
         <img
-          class="services-img"
+          class="services-img wow fadeInRightBig"
           src="../../images/webService.png"
           alt="dich vu website"
         />
@@ -335,7 +341,7 @@
       <!-- include social.html  -->
       <div class="social-container container">
   <div class="row justify-content-sm-center social-group">
-    <div class="social-title">
+    <div class="social-title wow flipInY">
       <p>Cộng đồng và</p>
       <p>Đối tác của HUGS AGENCY</p>
       <img
@@ -344,7 +350,7 @@
         alt="social line"
       />
     </div>
-    <div class="social-numbers">
+    <div class="social-numbers wow flipInX">
       <div class="container">
         <div class="row">
           <div class="social-number col-sm-6">
@@ -370,7 +376,7 @@
       </div>
     </div>
   </div>
-  <div class="social-nav">
+  <div class="social-nav wow bounce">
     <div class="nav-items">
       <img class="nav-icon" src="../../images/iconbongda.png" alt="icon" />
       <p>Hoa</p>
@@ -400,7 +406,7 @@
       <p>Gia đình</p>
     </div>
   </div>
-  <div class="social-slide">
+  <div class="social-slide wow tada">
     <img src="../../images/hoa.png" class="slide-img" alt="hoa tulip" />
     <img
       src="../../images/hoa-tulip-1.jpg"
@@ -479,9 +485,9 @@
       <!-- include News Hug Agency -->
       <div class="news-container container">
   <div class="news-title">
-    <p class="news-title">Tin tức HUGS AGENCY</p>
+    <p class="news-title wow bounceInLeft">Tin tức HUGS AGENCY</p>
     <img
-      class="news-title line"
+      class="news-title line wow bounceInRight"
       src="../../images/agencyLine.png"
       alt="gach ngang"
     />
@@ -489,33 +495,57 @@
   <div class="news-items">
     <div class="row justify-content-center">
       <div class="news-item col-md-6 col-sm-12">
-        <img class="news-img" src="../../images/hoa.png" alt="Hoa" />
+        <img
+          class="news-img wow fadeInLeft"
+          src="../../images/hoa.png"
+          alt="Hoa"
+        />
         <p class="img-des">Hoa từ cánh đồng ở Hà Lan</p>
       </div>
       <div class="news-item col-md-6 col-sm-12">
-        <img class="news-img" src="../../images/daBong.png" alt="bong da" />
+        <img
+          class="news-img wow fadeInDown"
+          src="../../images/daBong.png"
+          alt="bong da"
+        />
         <p class="img-des">
           Trò cưng của Lampard bất ngờ được Messi khen ngợi hết lời
         </p>
       </div>
       <div class="news-item col-md-6 col-sm-12">
-        <img class="news-img" src="../../images/baNa.png" alt="ba na hill" />
+        <img
+          class="news-img wow fadeInRight"
+          src="../../images/baNa.png"
+          alt="ba na hill"
+        />
         <p class="img-des">
           Du lịch Bà Nà để trở về tuổi thơ với những nhân vật hoạt hình Disney
         </p>
       </div>
       <div class="news-item col-md-6 col-sm-12">
-        <img class="news-img" src="../../images/xeBugati.png" alt="sieu xe" />
+        <img
+          class="news-img wow fadeInLeft"
+          src="../../images/xeBugati.png"
+          alt="sieu xe"
+        />
         <p class="img-des">Ra mắt xe Bugati Chiron hơn 40 tỷ với 300 mã lực</p>
       </div>
       <div class="news-item col-md-6 col-sm-12">
-        <img class="news-img" src="../../images/lol.png" alt="lien minh" />
+        <img
+          class="news-img wow fadeInUp"
+          src="../../images/lol.png"
+          alt="lien minh"
+        />
         <p class="img-des">
           Giải đấu Liên Minh Huyền Thoại được tổ chức tại Đà Nẵng
         </p>
       </div>
       <div class="news-item col-md-6 col-sm-12">
-        <img class="news-img" src="../../images/thung.png" alt="thung" />
+        <img
+          class="news-img wow fadeInRight"
+          src="../../images/thung.png"
+          alt="thung"
+        />
         <p class="img-des">Du lịch Đà Nẵng mùa nắng này</p>
       </div>
     </div>
@@ -531,7 +561,7 @@
       <div class="hugs-container container">
   <div class="row justify-content-start">
     <div class="hugs-title col-3">
-      <div class="hugs-title">
+      <div class="hugs-title wow bounceInLeft">
         <p class="hugs-title">Team HUGS</p>
         <p sclass="hugs-title">
           Chúng tôi là những người đồng đội luôn cùng nhìn về một hướng!
@@ -541,22 +571,46 @@
     <div class="hug-items container">
       <div class="row">
         <div class="hug-item col-4">
-          <img class="hug-img" src="../../images/hug-1.png" alt="team hugs" />
+          <img
+            class="hug-img wow bounceInUp"
+            src="../../images/hug-1.png"
+            alt="team hugs"
+          />
         </div>
         <div class="hug-item col-4">
-          <img class="hug-img" src="../../images/hug-4.png" alt="person" />
+          <img
+            class="hug-img wow bounceInUp"
+            src="../../images/hug-4.png"
+            alt="person"
+          />
         </div>
         <div class="hug-item col-4">
-          <img class="hug-img" src="../../images/hug-2.png" alt="person" />
+          <img
+            class="hug-img wow bounceInUp"
+            src="../../images/hug-2.png"
+            alt="person"
+          />
         </div>
         <div class="hug-item col-4">
-          <img class="hug-img" src="../../images/hug-3.png" alt="person" />
+          <img
+            class="hug-img wow bounceInDown"
+            src="../../images/hug-3.png"
+            alt="person"
+          />
         </div>
         <div class="hug-item col-4">
-          <img class="hug-img" src="../../images/hug-5.png" alt="team" />
+          <img
+            class="hug-img wow bounceInDown"
+            src="../../images/hug-5.png"
+            alt="team"
+          />
         </div>
         <div class="hug-item col-3">
-          <img class="hug-img" src="../../images/hug-6.png" alt="person" />
+          <img
+            class="hug-img wow bounceInDown"
+            src="../../images/hug-6.png"
+            alt="person"
+          />
         </div>
       </div>
     </div>
@@ -595,7 +649,7 @@
       <!-- include client.html  -->
       <div class="client-container">
   <div class="client-group">
-    <div class="client-title">
+    <div class="client-title wow bounce">
       <p>Khách hàng của HUGS AGENCY</p>
       <img
         class="client-line"
@@ -603,7 +657,7 @@
         alt="gach ngang"
       />
     </div>
-    <div class="client-logos">
+    <div class="client-logos wow tada">
       <img class="img-logo" src="../../images/fpt.png" alt="logo fpt" />
       <img
         class="img-logo"
@@ -626,7 +680,7 @@
         alt="logo cho lon"
       />
     </div>
-    <div class="client-title">
+    <div class="client-title wow bounce">
       <p>Đối tác khác</p>
       <img
         class="client-line"
@@ -634,7 +688,7 @@
         alt="gachngang"
       />
     </div>
-    <div class="client-logos container">
+    <div class="client-logos container wow swing">
       <img
         class="img-logo"
         src="../../images/logoByteDance.png"
@@ -655,9 +709,9 @@
       <!-- include contact.html -->
       <div class="contact-container">
   <div class="contact__title col-12">
-    <p class="contact__title--des">Liên hệ với chúng tôi</p>
+    <p class="contact__title--des wow bounceInDown">Liên hệ với chúng tôi</p>
     <img
-      class="contact__title--line"
+      class="contact__title--line wow bounceInUp"
       src="../../images/agencyLine.png"
       alt="gach ngang"
     />
@@ -669,47 +723,53 @@
       <div class="group__contacts col-12 col-sm-12 col-md-6 col-lg-5">
         <div class="group__contacts__address">
           <img
-            class="address__img"
+            class="address__img wow fadeInLeft"
             src="../../images/address.png"
             alt="dia chi"
           />
           <div class="address__title">
-            <p class="address__name">Địa chỉ</p>
-            <p class="address__des">55 Lý Thường Kiệt, Hải Châu, TP Đà Nẵng</p>
+            <p class="address__name wow fadeInRight">Địa chỉ</p>
+            <p class="address__des wow fadeInRight">
+              55 Lý Thường Kiệt, Hải Châu, TP Đà Nẵng
+            </p>
           </div>
         </div>
         <div class="group__contacts__address">
           <img
-            class="address__img"
+            class="address__img wow fadeInLeft"
             src="../../images/email.png"
             alt="dia chi"
           />
           <div class="address__title">
-            <p class="address__name">Email</p>
-            <p class="address__des">lienhe@hugs.agency</p>
+            <p class="address__name wow fadeInRight">Email</p>
+            <p class="address__des wow fadeInRight">lienhe@hugs.agency</p>
           </div>
         </div>
         <div class="group__contacts__address">
           <img
-            class="address__img"
+            class="address__img wow fadeInLeft"
             src="../../images/phonenumber.png"
             alt="dia chi"
           />
           <div class="address__title">
-            <p class="address__name">Số điện thoại</p>
-            <p class="address__des">0924.392.222</p>
+            <p class="address__name wow fadeInRight">Số điện thoại</p>
+            <p class="address__des wow fadeInRight">0924.392.222</p>
           </div>
         </div>
         <div class="group__contacts__address">
-          <img class="address__img" src="../../images/face.png" alt="dia chi" />
+          <img
+            class="address__img wow fadeInLeft"
+            src="../../images/face.png"
+            alt="dia chi"
+          />
           <div class="address__title">
-            <p class="address__name">Fanpage</p>
-            <p class="address__des">www.fb.com/hugs.agency/</p>
+            <p class="address__name wow fadeInRight">Fanpage</p>
+            <p class="address__des wow fadeInRight">www.fb.com/hugs.agency/</p>
           </div>
         </div>
       </div>
       <div
-        class="group__inputs col-12 col-sm-12 col-md-6 col-lg-7 justify-content-md-center"
+        class="group__inputs col-12 col-sm-12 col-md-6 col-lg-7 justify-content-md-center wow flipInX"
       >
         <label for="group__input" class="group__input__label">Họ tên</label>
         <input
@@ -754,7 +814,7 @@
       <div class="footer__group">
         <div class="footer__logo col-lg-6 col-md-4">
           <img
-            class="footer__logo__img"
+            class="footer__logo__img wow rotateIn"
             src="../../images/logo.png"
             alt="logo"
           />
@@ -762,21 +822,23 @@
           <p class="footer__logo__text">VIETNAM</p>
         </div>
         <div class="footer__group__des col-md-12">
-          <p class="footer__group__text">Subscribe to our newsletter</p>
-          <p class="footer__group__text">
+          <p class="footer__group__text wow rotateInDownLeft">
+            Subscribe to our newsletter
+          </p>
+          <p class="footer__group__text wow rotateInDownRight">
             Hãy để lại email để nhận các thông tin mới nhất từ chúng tôi!
           </p>
           <input
-            class="footer__group__input"
+            class="footer__group__input wow rotateInDownLeft"
             type="text"
             placeholder="Nhập email"
           />
-          <div class="new-button">
+          <div class="new-button wow rotateInDownLeft">
             <div class="button-content">
               <p>Subscribe</p>
             </div>
           </div>
-          <div class="footer__group__social">
+          <div class="footer__group__social wow rotateInDownRight">
             <p class="footer_group__text--social">Theo dõi chúng tôi</p>
             <div class="footer__group__logo">
               <div class="footer__group__round">
@@ -820,7 +882,7 @@
       </div>
       <div class="footer__img col-lg-4 col-md-6">
         <img
-          class="footer__img-desktop"
+          class="footer__img-desktop wow flip"
           src="../../images/desktop.png"
           alt="desktop"
         />
